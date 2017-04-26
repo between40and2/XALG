@@ -15,6 +15,8 @@
 * Layout for data structures.
 * ADT specific scope and features, such as multi-edge graph
 * Very large scale of structures. (space and time performance is not guaranteed)
+* No Apple frameworks(CoreFoundation, Accelerate, simd) involved.
+  * See XALG-aOS, that is with Apple's OSes, e.g macOS, iOS, tvOS, watchOS.
 
 ## For hurried users
 
