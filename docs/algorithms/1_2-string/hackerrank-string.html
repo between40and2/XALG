@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hackerrank-string</title>
+</head>
+
+<body>
+<p>hackerrank-string </p>
+<p>&nbsp;</p>
+<table width="100%" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.hackerrank.com/challenges/camelcase">CamelCase</a></td>
+    <td><p>let s = Array(readLine()!.characters)<br>
+      // print(s)<br>
+      let captials = s.filter { let s = &quot;\($0)&quot; ; return  s.uppercased() == s }</p>
+    <p>print(captials.count + 1)</p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.hackerrank.com/challenges/two-characters?h_r=next-challenge&h_v=zen">Two Characters</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.hackerrank.com/challenges/pangrams">Pangrams</a></td>
+    <td>let s = Array(readLine()!.lowercased().characters)<br>
+      // print(s)<br>
+      var count = [Character : Int]()<br>
+      s.forEach { count[$0] = (count[$0] ?? 0) + 1 }<br>
+    print(count.count == 27 ? &quot;pangram&quot; : &quot;not pangram &quot; )</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

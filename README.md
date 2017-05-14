@@ -2,12 +2,17 @@
 
 > Pure Swift Applied Algorithms for Engineers (not for Exam-Victims, Magicians, or Rocket Scientists)
 
+## Motivation
+
+As a software engineer, I experienced a big gap between the supply of algorithm from textbook or demo-like open-source and the demand on algorithm in projects, and decided to fill the gap.
+
+The problems in projects are real and complicated with context. The payloads, the entities in topic, are objects that business-backed, rather than over-simplified integer. The key which is involved with algorithm in comparison can be different from the payload. Payloads with same keys are allowed to enter data structure. Just name a few, that the real problems that textbook data structure and algorithms are completely ignorant of.
 
 ## Scope
 
 * Pure Swift code for common data structures and algorithms. (even not Foundation/Cocoa?)
 * File-based storage/IO for data structures, mainly tree and graph. You need to save it for next time, no?
-* relational database storage for data structures, in CoreData, Apple-provided frameworks of ORM.
+* Relational database storage for data structures, in CoreData, Apple-provided frameworks of ORM.
 
 ### Out Of Scope
 
@@ -15,14 +20,19 @@
 * Layout for data structures.
 * ADT specific scope and features, such as multi-edge graph
 * Very large scale of structures. (space and time performance is not guaranteed)
-* No Apple frameworks(CoreFoundation, Accelerate, simd) involved.
-  * See XALG-aOS, that is with Apple's OSes, e.g macOS, iOS, tvOS, watchOS.
 
-## For hurried users
+## TOC of XALG project
+
+* [frameworks](frameworks), home of Swift code that the users can just import them by folder into their own projects.
+* projects, home for Xcode projects or playgrounds to demo the usage of XALG frameworks. Please look at the unit tests for usage.
+* [docs](docs), rich set of docs to cover end-to-end of this project.
+  * [algorithms](docs/algorithms), general knowledge on data structure and algorithms
+  * [design](docs/design)
+  * [api](docs/api), API and Usage
+
 
 The rest of this article will discuss the design goals and principles that delivers primarily intent values, compared with other frameworks or projects.
 
-If you are more interested in trying it out, please read [xx](), or checkout XALG Xcode project, in which the unit test cases cover the most of the usage of this framework.
 
 ## Design Goals
 
@@ -37,30 +47,6 @@ If you are more interested in trying it out, please read [xx](), or checkout XAL
 * Robustness. Using Swift Error handling to communicate exception, rather than optional returns.
 
 
-## Design decisions
+## Contacts
 
-
-### Better Service, element object as business object carrier.
-
-Vertex has 2 properties as below
-```swift
-var userInfo = [String: Any]()
-var object : Any?
-```
-They are for convenience of app (or XALG's client), to carrier related objects with them. Algorithms are NOT supposed to read or write such data. If an algorithm needs extra informations, it should be the requirement explicit by defining a new protocols for element object.
-
-### Vertex and Edge Identity
-
-How can a vertex or edge be identified with identifier (such as String or Int)?
-
-Should internal vertex object be a scalar or a struct or a class?
-
-
-
-### Trade-off on simplicity and flexibility/rich-feature
-
-Can simplicity be done with a bench of shortcuts/convenience methods?
-
-## Summary
-
-I wish you enjoy using this framework. If any suggestions, please let me know. 1847780@qq.com
+I wish you enjoy using this framework. If any suggestions, please let me know. 1847780 at qq dot com

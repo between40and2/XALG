@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sorting-swift</title>
+</head>
+
+<body>
+<h1>sorting-swift</h1>
+<p>&nbsp;</p>
+<p><a href="https://www.toptal.com/developers/sorting-algorithms">Sorting Algorithms Animations</a> (Insertion, Selection, Bubble, Shell, Merge, Heap, Quick, Quick3)</p>
+<p>&nbsp;</p>
+<p>swift algorithm club (<a href="https://github.com/between40and2/swift-algorithm-club">between40and2</a>)</p>
+<h2>Swift supports</h2>
+<p><a href="https://developer.apple.com/reference/swift/array/1688499-sort">mutating func sort()</a></p>
+<p><a href="https://developer.apple.com/reference/swift/array/2296801-sort">mutating func sort(by areInIncreasingOrder: (Element, Element) -&gt; Bool)</a></p>
+<h3>Sort: In-place or new array<br>
+</h3>
+<p>initially, i thought, new-array sort can be derived from in-place sort, with following function,<br>
+</p>
+<p> func sorted(_ a : [ElementType]) -&gt; [ElementType] {<br>
+  var array_internal = a<br>
+  sort(&amp;array_internal)<br>
+  return array_internal<br>
+  }</p>
+<p>However, some sort are implemented in new-array way.( such as Merge Sort) and some new-array way of sort, such as Heap Sort (see https://github.com/between40and2/swift-algorithm-club/tree/master/Heap%20Sort)</p>
+<h2>where and how is comparison expressed?</h2>
+<p>* class XALG_Sort_base &lt;Element: Comparable&gt;</p>
+<p>* func mergeSort&lt;T: Comparable&gt;(_ array: [T]) -&gt; [T] {<br>
+</p>
+<p>* var isOrderedBefore : (T, T) -&gt; Bool // in Heap</p>
+</body>
+</html>

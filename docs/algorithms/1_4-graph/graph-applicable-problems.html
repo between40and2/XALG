@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>graph-applicable-problems</title>
+</head>
+
+<body>
+<p>graph-applicable-problems </p>
+<p>&nbsp;</p>
+<table width="100%" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>6.4 应用1: 拓扑排序</td>
+    <td>&nbsp;</td>
+    <td>DFS</td>
+    <td>6.7</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>BFS (with queue)</td>
+    <td>6.8</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>Kahn</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>6.5 应用2: 关键路径</p>
+    <p><a href="https://en.wikipedia.org/wiki/Critical_path_method">Critical path method</a>    </p>
+    <p><a href="http://2d.hep.cn/1871820/18">微视频18-图的关键路径计算</a></p></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>6.9 </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>6.6 应用3: 最短路径</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>6.6.1 单源点最短路径</p>
+    <p><a href="http://2d.hep.cn/1871820/19">微视频19-图的单源点最短路径</a></p></td>
+    <td>&nbsp;</td>
+    <td><p>Dijkstra</p>
+    <p>Bellman-Ford</p></td>
+    <td>6.10 Dijkstra算法</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>6.6.2 任意对顶点之间的最短路径</td>
+    <td>&nbsp;</td>
+    <td>Floyd</td>
+    <td>6.11 Floyd算法</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>6.7 应用4: 图的最小生成树 </p>
+    <p>Minimum Spanning Tree</p>
+    <p>Given a start vertex &quot;s&quot;, returns a list of Edges</p>
+    <p><a href="http://2d.hep.cn/1871820/20">微视频20-最小生成树-prim算法</a></p>
+    <p><a href="http://2d.hep.cn/1871820/21">微视频21-最小生成树-Kruskal算法</a></p></td>
+    <td>&nbsp;</td>
+    <td><p>Prim 算法</p>
+    <p>扩点法</p></td>
+    <td>6.12 Prim算法</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><p>Kruskal</p>
+    <p>扩边法</p></td>
+    <td>6.13 Kruskal算法</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>Other common graph problems/applications</p>
+<table width="100%" border="1">
+  <tr>
+    <td>Spanning Tree</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="https://en.wikipedia.org/wiki/Longest_path_problem">Longest path problem</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>Graph layout </p>
+      <p><a href="https://en.wikipedia.org/wiki/Layered_graph_drawing">Layered graph drawing</a></p>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Graphviz">Graphviz</a></li>
+      </ul></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-15-single-source-shortest-paths-problem/">Lecture 15: Single-Source Shortest Paths Problem</a></p>
+<p><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-16-dijkstra/">Lecture 16: Dijkstra</a></p>
+<p><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-17-bellman-ford/">Lecture 17: Bellman-Ford</a></p>
+<p><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-18-speeding-up-dijkstra/">Lecture 18: Speeding up Dijkstra</a></p>
+<h2>Properties/Attributes</h2>
+<p>&nbsp;</p>
+<table width="100%" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>Graph's directed-ness</td>
+    <td>weighted graph</td>
+    <td>skips any vertices</td>
+    <td>returns vertices or edges</td>
+    <td>result uniqueness</td>
+    <td>?????</td>
+  </tr>
+  <tr>
+    <td>DFS</td>
+    <td>&nbsp;</td>
+    <td>N</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>BFS</td>
+    <td>&nbsp;</td>
+    <td>N</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Topological Sort</td>
+    <td>&nbsp;</td>
+    <td>N</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Critical Path</td>
+    <td>&nbsp;</td>
+    <td>Y</td>
+    <td rowspan="2">Y, since it is a path</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>Shortest Path</p>
+    <p>Single Source</p></td>
+    <td>&nbsp;</td>
+    <td>Y</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Minimum Spanning Tree (MST)</td>
+    <td>&nbsp;</td>
+    <td>Y</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

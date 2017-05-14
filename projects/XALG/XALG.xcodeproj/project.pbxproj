@@ -1,0 +1,1099 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02C6757E1EC8701F003A6DA9 /* XALG_Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6751E1EC8701F003A6DA9 /* XALG_Operation.swift */; };
+		02C6757F1EC8701F003A6DA9 /* GKRandomSource+XALG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6751F1EC8701F003A6DA9 /* GKRandomSource+XALG.swift */; };
+		02C675801EC8701F003A6DA9 /* XALG_ADT_Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675221EC8701F003A6DA9 /* XALG_ADT_Edge.swift */; };
+		02C675811EC8701F003A6DA9 /* XALG_ADT_Graph+ForVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675231EC8701F003A6DA9 /* XALG_ADT_Graph+ForVertex.swift */; };
+		02C675821EC8701F003A6DA9 /* XALG_ADT_Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675241EC8701F003A6DA9 /* XALG_ADT_Graph.swift */; };
+		02C675831EC8701F003A6DA9 /* XALG_ADT_Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675251EC8701F003A6DA9 /* XALG_ADT_Vertex.swift */; };
+		02C675841EC8701F003A6DA9 /* XALG_Algo_Graph_MST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675281EC8701F003A6DA9 /* XALG_Algo_Graph_MST.swift */; };
+		02C675851EC8701F003A6DA9 /* XALG_Algo_Graph_BellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6752A1EC8701F003A6DA9 /* XALG_Algo_Graph_BellmanFord.swift */; };
+		02C675861EC8701F003A6DA9 /* XALG_Algo_Graph_Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6752B1EC8701F003A6DA9 /* XALG_Algo_Graph_Dijkstra.swift */; };
+		02C675871EC8701F003A6DA9 /* XALG_Algo_Graph_SSSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6752C1EC8701F003A6DA9 /* XALG_Algo_Graph_SSSP.swift */; };
+		02C675881EC8701F003A6DA9 /* XALG_Algo_Graph_BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6752E1EC8701F003A6DA9 /* XALG_Algo_Graph_BFS.swift */; };
+		02C675891EC8701F003A6DA9 /* XALG_Algo_Graph_DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6752F1EC8701F003A6DA9 /* XALG_Algo_Graph_DFS.swift */; };
+		02C6758A1EC8701F003A6DA9 /* XALG_Algo_Graph_Traversal_base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675301EC8701F003A6DA9 /* XALG_Algo_Graph_Traversal_base.swift */; };
+		02C6758B1EC8701F003A6DA9 /* XALG_Algo_Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675311EC8701F003A6DA9 /* XALG_Algo_Graph.swift */; };
+		02C6758C1EC8701F003A6DA9 /* XALG_Algo_Graph_CritialPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675321EC8701F003A6DA9 /* XALG_Algo_Graph_CritialPath.swift */; };
+		02C6758D1EC8701F003A6DA9 /* XALG_Algo_Graph_TopologicalSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675331EC8701F003A6DA9 /* XALG_Algo_Graph_TopologicalSorting.swift */; };
+		02C6758E1EC8701F003A6DA9 /* XALG_DS_GraphEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675361EC8701F003A6DA9 /* XALG_DS_GraphEdge.swift */; };
+		02C6758F1EC8701F003A6DA9 /* XALG_DS_GraphVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675371EC8701F003A6DA9 /* XALG_DS_GraphVertex.swift */; };
+		02C675901EC8701F003A6DA9 /* XALG_DS_Graph__VertexEdgeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675381EC8701F003A6DA9 /* XALG_DS_Graph__VertexEdgeArray.swift */; };
+		02C675911EC8701F003A6DA9 /* XALG_Rep_Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6753A1EC8701F003A6DA9 /* XALG_Rep_Graph.swift */; };
+		02C675921EC8701F003A6DA9 /* XALG_Rep_Graph_AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6753B1EC8701F003A6DA9 /* XALG_Rep_Graph_AdjacencyList.swift */; };
+		02C675931EC8701F003A6DA9 /* XALG_Rep_Graph_Weighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6753C1EC8701F003A6DA9 /* XALG_Rep_Graph_Weighted.swift */; };
+		02C675941EC8701F003A6DA9 /* XALG_Error_Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6753D1EC8701F003A6DA9 /* XALG_Error_Graph.swift */; };
+		02C675951EC8701F003A6DA9 /* XALG_WeightType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6753E1EC8701F003A6DA9 /* XALG_WeightType.swift */; };
+		02C675961EC8701F003A6DA9 /* XALG_ADT_Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675411EC8701F003A6DA9 /* XALG_ADT_Heap.swift */; };
+		02C675971EC8701F003A6DA9 /* XALG_ADT_PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675421EC8701F003A6DA9 /* XALG_ADT_PriorityQueue.swift */; };
+		02C675981EC8701F003A6DA9 /* XALG_ADT_Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675431EC8701F003A6DA9 /* XALG_ADT_Queue.swift */; };
+		02C675991EC8701F003A6DA9 /* XALG_ADT_Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675441EC8701F003A6DA9 /* XALG_ADT_Stack.swift */; };
+		02C6759A1EC8701F003A6DA9 /* XALG_DS_Queue__Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675461EC8701F003A6DA9 /* XALG_DS_Queue__Array.swift */; };
+		02C6759B1EC8701F003A6DA9 /* XALG_DS_Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675471EC8701F003A6DA9 /* XALG_DS_Stack.swift */; };
+		02C6759C1EC8701F003A6DA9 /* XALG_DS_Stack__LinkedList_struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675481EC8701F003A6DA9 /* XALG_DS_Stack__LinkedList_struct.swift */; };
+		02C6759D1EC8701F003A6DA9 /* XALG_Rep_Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6754A1EC8701F003A6DA9 /* XALG_Rep_Heap.swift */; };
+		02C6759E1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__CFBinaryHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6754B1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__CFBinaryHeap.swift */; };
+		02C6759F1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6754C1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__Heap.swift */; };
+		02C675A01EC8701F003A6DA9 /* XALG_Rep_Queue__LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6754D1EC8701F003A6DA9 /* XALG_Rep_Queue__LinkedList.swift */; };
+		02C675A11EC8701F003A6DA9 /* XALG_Rep_Stack_LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6754E1EC8701F003A6DA9 /* XALG_Rep_Stack_LinkedList.swift */; };
+		02C675A21EC8701F003A6DA9 /* XALG_Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675501EC8701F003A6DA9 /* XALG_Sort.swift */; };
+		02C675A31EC8701F003A6DA9 /* XALG_Sort_InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675511EC8701F003A6DA9 /* XALG_Sort_InsertionSort.swift */; };
+		02C675A41EC8701F003A6DA9 /* XALG_Sort_MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675521EC8701F003A6DA9 /* XALG_Sort_MergeSort.swift */; };
+		02C675A51EC8701F003A6DA9 /* XALG_Sort_MergeSort__iterative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675531EC8701F003A6DA9 /* XALG_Sort_MergeSort__iterative.swift */; };
+		02C675A61EC8701F003A6DA9 /* XALG_Sort_QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675541EC8701F003A6DA9 /* XALG_Sort_QuickSort.swift */; };
+		02C675A71EC8701F003A6DA9 /* XALG_Sort_SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675551EC8701F003A6DA9 /* XALG_Sort_SelectionSort.swift */; };
+		02C675A81EC8701F003A6DA9 /* XALG_Sort_ShellSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675561EC8701F003A6DA9 /* XALG_Sort_ShellSort.swift */; };
+		02C675A91EC8701F003A6DA9 /* XALG_ADT_TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6755A1EC8701F003A6DA9 /* XALG_ADT_TreeNode.swift */; };
+		02C675AA1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6755B1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinarySearchTree.swift */; };
+		02C675AB1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6755C1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinaryTree.swift */; };
+		02C675AC1EC8701F003A6DA9 /* XALG_ADT_TreeNode_KaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6755D1EC8701F003A6DA9 /* XALG_ADT_TreeNode_KaryTree.swift */; };
+		02C675AD1EC8701F003A6DA9 /* XALG_ADT_Tree_BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6755E1EC8701F003A6DA9 /* XALG_ADT_Tree_BinarySearchTree.swift */; };
+		02C675AE1EC8701F003A6DA9 /* XALG_ADT_Tree_BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6755F1EC8701F003A6DA9 /* XALG_ADT_Tree_BinaryTree.swift */; };
+		02C675AF1EC8701F003A6DA9 /* XALG_ADT_Tree_KaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675601EC8701F003A6DA9 /* XALG_ADT_Tree_KaryTree.swift */; };
+		02C675B01EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675621EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal.swift */; };
+		02C675B11EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal__stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675631EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal__stack.swift */; };
+		02C675B21EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal_base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675641EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal_base.swift */; };
+		02C675B31EC8701F003A6DA9 /* XALG_Algo_BinaryTree_TraversalApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675651EC8701F003A6DA9 /* XALG_Algo_BinaryTree_TraversalApplication.swift */; };
+		02C675B41EC8701F003A6DA9 /* XALG_Algo_KaryTree_Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675661EC8701F003A6DA9 /* XALG_Algo_KaryTree_Traversal.swift */; };
+		02C675B51EC8701F003A6DA9 /* XALG_DS_TreeNode_BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675691EC8701F003A6DA9 /* XALG_DS_TreeNode_BinaryTree.swift */; };
+		02C675B61EC8701F003A6DA9 /* XALG_Rep_TreeNode_BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6756C1EC8701F003A6DA9 /* XALG_Rep_TreeNode_BinaryTree.swift */; };
+		02C675B71EC8701F003A6DA9 /* XALG_Rep_TreeNode_KaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6756D1EC8701F003A6DA9 /* XALG_Rep_TreeNode_KaryTree.swift */; };
+		02C675B81EC8701F003A6DA9 /* XALG_Rep_Tree_BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6756E1EC8701F003A6DA9 /* XALG_Rep_Tree_BinarySearchTree.swift */; };
+		02C675B91EC8701F003A6DA9 /* XALG_Rep_Tree_HuffmanTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6756F1EC8701F003A6DA9 /* XALG_Rep_Tree_HuffmanTree.swift */; };
+		02C675BA1EC8701F003A6DA9 /* XALG_Rep_Tree_KaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675701EC8701F003A6DA9 /* XALG_Rep_Tree_KaryTree.swift */; };
+		02C675BB1EC8701F003A6DA9 /* XALG_ThreadedBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675711EC8701F003A6DA9 /* XALG_ThreadedBinaryTree.swift */; };
+		02C675BC1EC8701F003A6DA9 /* XALG_Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675721EC8701F003A6DA9 /* XALG_Tree.swift */; };
+		02C675BD1EC8701F003A6DA9 /* XALG_Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675731EC8701F003A6DA9 /* XALG_Path.swift */; };
+		02C675BE1EC8701F003A6DA9 /* XALG_Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675741EC8701F003A6DA9 /* XALG_Visit.swift */; };
+		02C675BF1EC8701F003A6DA9 /* XALG-IO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02C675771EC8701F003A6DA9 /* XALG-IO.xcdatamodeld */; };
+		02C675C01EC8701F003A6DA9 /* XALG_FSLoader_BinaryTree_linebased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6757A1EC8701F003A6DA9 /* XALG_FSLoader_BinaryTree_linebased.swift */; };
+		02C675C11EC8701F003A6DA9 /* XALG_Decoder_Graph__linebased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6757C1EC8701F003A6DA9 /* XALG_Decoder_Graph__linebased.swift */; };
+		02C675C21EC8701F003A6DA9 /* XALG_FSLoader_Graph__linebased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6757D1EC8701F003A6DA9 /* XALG_FSLoader_Graph__linebased.swift */; };
+		02C675E41EC8702A003A6DA9 /* data-graph-aoe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02C675C61EC8702A003A6DA9 /* data-graph-aoe.txt */; };
+		02C675E51EC8702A003A6DA9 /* XALG_Tests_Graph_CP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675C71EC8702A003A6DA9 /* XALG_Tests_Graph_CP.swift */; };
+		02C675E61EC8702A003A6DA9 /* data-graph-aov.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02C675C81EC8702A003A6DA9 /* data-graph-aov.txt */; };
+		02C675E71EC8702A003A6DA9 /* data-graph.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02C675C91EC8702A003A6DA9 /* data-graph.txt */; };
+		02C675E81EC8702A003A6DA9 /* data-graph-directed-weighted-1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02C675CB1EC8702A003A6DA9 /* data-graph-directed-weighted-1.txt */; };
+		02C675E91EC8702A003A6DA9 /* XALG_Tests_Graph_SSSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675CC1EC8702A003A6DA9 /* XALG_Tests_Graph_SSSP.swift */; };
+		02C675EA1EC8702A003A6DA9 /* data-graph-aov-topsort.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02C675CE1EC8702A003A6DA9 /* data-graph-aov-topsort.txt */; };
+		02C675EB1EC8702A003A6DA9 /* data-graph-traversal.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02C675D01EC8702A003A6DA9 /* data-graph-traversal.txt */; };
+		02C675EC1EC8702A003A6DA9 /* XALG_Tests_Graph_Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675D11EC8702A003A6DA9 /* XALG_Tests_Graph_Traversal.swift */; };
+		02C675ED1EC8702A003A6DA9 /* XALG_Tests_Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675D21EC8702A003A6DA9 /* XALG_Tests_Graph.swift */; };
+		02C675EE1EC8702A003A6DA9 /* XALG_Tests_Graph_IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675D31EC8702A003A6DA9 /* XALG_Tests_Graph_IO.swift */; };
+		02C675EF1EC8702A003A6DA9 /* XALG_Tests_Graph_TopologicalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675D41EC8702A003A6DA9 /* XALG_Tests_Graph_TopologicalSort.swift */; };
+		02C675F01EC8702A003A6DA9 /* XALG_Tests_Graph_Weighted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675D51EC8702A003A6DA9 /* XALG_Tests_Graph_Weighted.swift */; };
+		02C675F11EC8702A003A6DA9 /* XALG_Tests_Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675D71EC8702A003A6DA9 /* XALG_Tests_Heap.swift */; };
+		02C675F21EC8702A003A6DA9 /* XALG_Tests_PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675D81EC8702A003A6DA9 /* XALG_Tests_PriorityQueue.swift */; };
+		02C675F31EC8702A003A6DA9 /* XALG_Tests_Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675D91EC8702A003A6DA9 /* XALG_Tests_Queue.swift */; };
+		02C675F41EC8702A003A6DA9 /* XALG_Tests_Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675DA1EC8702A003A6DA9 /* XALG_Tests_Stack.swift */; };
+		02C675F51EC8702A003A6DA9 /* data-binarytree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02C675DC1EC8702A003A6DA9 /* data-binarytree.plist */; };
+		02C675F61EC8702A003A6DA9 /* BinaryTree-sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 02C675DE1EC8702A003A6DA9 /* BinaryTree-sample.txt */; };
+		02C675F71EC8702A003A6DA9 /* XALG_Tests_AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675DF1EC8702A003A6DA9 /* XALG_Tests_AVLTree.swift */; };
+		02C675F81EC8702A003A6DA9 /* XALG_Tests_BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675E01EC8702A003A6DA9 /* XALG_Tests_BinarySearchTree.swift */; };
+		02C675F91EC8702A003A6DA9 /* XALG_Tests_BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675E11EC8702A003A6DA9 /* XALG_Tests_BinaryTree.swift */; };
+		02C675FA1EC8702A003A6DA9 /* XALG_Tests_HuffmanTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675E21EC8702A003A6DA9 /* XALG_Tests_HuffmanTree.swift */; };
+		02C675FB1EC8702A003A6DA9 /* XALG_Tests_KaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675E31EC8702A003A6DA9 /* XALG_Tests_KaryTree.swift */; };
+		02E991F61EBF0C4D009BF5E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E991F51EBF0C4D009BF5E8 /* AppDelegate.swift */; };
+		02E991F81EBF0C4D009BF5E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E991F71EBF0C4D009BF5E8 /* ViewController.swift */; };
+		02E991FD1EBF0C4D009BF5E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E991FC1EBF0C4D009BF5E8 /* Assets.xcassets */; };
+		02E992001EBF0C4D009BF5E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E991FE1EBF0C4D009BF5E8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02E992071EBF0C4E009BF5E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02E991EA1EBF0C4D009BF5E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02E991F11EBF0C4D009BF5E8;
+			remoteInfo = XALG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C6751E1EC8701F003A6DA9 /* XALG_Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Operation.swift; sourceTree = "<group>"; };
+		02C6751F1EC8701F003A6DA9 /* GKRandomSource+XALG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GKRandomSource+XALG.swift"; sourceTree = "<group>"; };
+		02C675221EC8701F003A6DA9 /* XALG_ADT_Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Edge.swift; sourceTree = "<group>"; };
+		02C675231EC8701F003A6DA9 /* XALG_ADT_Graph+ForVertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XALG_ADT_Graph+ForVertex.swift"; sourceTree = "<group>"; };
+		02C675241EC8701F003A6DA9 /* XALG_ADT_Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Graph.swift; sourceTree = "<group>"; };
+		02C675251EC8701F003A6DA9 /* XALG_ADT_Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Vertex.swift; sourceTree = "<group>"; };
+		02C675281EC8701F003A6DA9 /* XALG_Algo_Graph_MST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_MST.swift; sourceTree = "<group>"; };
+		02C6752A1EC8701F003A6DA9 /* XALG_Algo_Graph_BellmanFord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_BellmanFord.swift; sourceTree = "<group>"; };
+		02C6752B1EC8701F003A6DA9 /* XALG_Algo_Graph_Dijkstra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_Dijkstra.swift; sourceTree = "<group>"; };
+		02C6752C1EC8701F003A6DA9 /* XALG_Algo_Graph_SSSP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_SSSP.swift; sourceTree = "<group>"; };
+		02C6752E1EC8701F003A6DA9 /* XALG_Algo_Graph_BFS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_BFS.swift; sourceTree = "<group>"; };
+		02C6752F1EC8701F003A6DA9 /* XALG_Algo_Graph_DFS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_DFS.swift; sourceTree = "<group>"; };
+		02C675301EC8701F003A6DA9 /* XALG_Algo_Graph_Traversal_base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_Traversal_base.swift; sourceTree = "<group>"; };
+		02C675311EC8701F003A6DA9 /* XALG_Algo_Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph.swift; sourceTree = "<group>"; };
+		02C675321EC8701F003A6DA9 /* XALG_Algo_Graph_CritialPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_CritialPath.swift; sourceTree = "<group>"; };
+		02C675331EC8701F003A6DA9 /* XALG_Algo_Graph_TopologicalSorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_TopologicalSorting.swift; sourceTree = "<group>"; };
+		02C675361EC8701F003A6DA9 /* XALG_DS_GraphEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_DS_GraphEdge.swift; sourceTree = "<group>"; };
+		02C675371EC8701F003A6DA9 /* XALG_DS_GraphVertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_DS_GraphVertex.swift; sourceTree = "<group>"; };
+		02C675381EC8701F003A6DA9 /* XALG_DS_Graph__VertexEdgeArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_DS_Graph__VertexEdgeArray.swift; sourceTree = "<group>"; };
+		02C6753A1EC8701F003A6DA9 /* XALG_Rep_Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Graph.swift; sourceTree = "<group>"; };
+		02C6753B1EC8701F003A6DA9 /* XALG_Rep_Graph_AdjacencyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Graph_AdjacencyList.swift; sourceTree = "<group>"; };
+		02C6753C1EC8701F003A6DA9 /* XALG_Rep_Graph_Weighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Graph_Weighted.swift; sourceTree = "<group>"; };
+		02C6753D1EC8701F003A6DA9 /* XALG_Error_Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Error_Graph.swift; sourceTree = "<group>"; };
+		02C6753E1EC8701F003A6DA9 /* XALG_WeightType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_WeightType.swift; sourceTree = "<group>"; };
+		02C675411EC8701F003A6DA9 /* XALG_ADT_Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Heap.swift; sourceTree = "<group>"; };
+		02C675421EC8701F003A6DA9 /* XALG_ADT_PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_PriorityQueue.swift; sourceTree = "<group>"; };
+		02C675431EC8701F003A6DA9 /* XALG_ADT_Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Queue.swift; sourceTree = "<group>"; };
+		02C675441EC8701F003A6DA9 /* XALG_ADT_Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Stack.swift; sourceTree = "<group>"; };
+		02C675461EC8701F003A6DA9 /* XALG_DS_Queue__Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_DS_Queue__Array.swift; sourceTree = "<group>"; };
+		02C675471EC8701F003A6DA9 /* XALG_DS_Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_DS_Stack.swift; sourceTree = "<group>"; };
+		02C675481EC8701F003A6DA9 /* XALG_DS_Stack__LinkedList_struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_DS_Stack__LinkedList_struct.swift; sourceTree = "<group>"; };
+		02C6754A1EC8701F003A6DA9 /* XALG_Rep_Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Heap.swift; sourceTree = "<group>"; };
+		02C6754B1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__CFBinaryHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_PriorityQueue__CFBinaryHeap.swift; sourceTree = "<group>"; };
+		02C6754C1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_PriorityQueue__Heap.swift; sourceTree = "<group>"; };
+		02C6754D1EC8701F003A6DA9 /* XALG_Rep_Queue__LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Queue__LinkedList.swift; sourceTree = "<group>"; };
+		02C6754E1EC8701F003A6DA9 /* XALG_Rep_Stack_LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Stack_LinkedList.swift; sourceTree = "<group>"; };
+		02C675501EC8701F003A6DA9 /* XALG_Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Sort.swift; sourceTree = "<group>"; };
+		02C675511EC8701F003A6DA9 /* XALG_Sort_InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Sort_InsertionSort.swift; sourceTree = "<group>"; };
+		02C675521EC8701F003A6DA9 /* XALG_Sort_MergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Sort_MergeSort.swift; sourceTree = "<group>"; };
+		02C675531EC8701F003A6DA9 /* XALG_Sort_MergeSort__iterative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Sort_MergeSort__iterative.swift; sourceTree = "<group>"; };
+		02C675541EC8701F003A6DA9 /* XALG_Sort_QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Sort_QuickSort.swift; sourceTree = "<group>"; };
+		02C675551EC8701F003A6DA9 /* XALG_Sort_SelectionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Sort_SelectionSort.swift; sourceTree = "<group>"; };
+		02C675561EC8701F003A6DA9 /* XALG_Sort_ShellSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Sort_ShellSort.swift; sourceTree = "<group>"; };
+		02C6755A1EC8701F003A6DA9 /* XALG_ADT_TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_TreeNode.swift; sourceTree = "<group>"; };
+		02C6755B1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_TreeNode_BinarySearchTree.swift; sourceTree = "<group>"; };
+		02C6755C1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_TreeNode_BinaryTree.swift; sourceTree = "<group>"; };
+		02C6755D1EC8701F003A6DA9 /* XALG_ADT_TreeNode_KaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_TreeNode_KaryTree.swift; sourceTree = "<group>"; };
+		02C6755E1EC8701F003A6DA9 /* XALG_ADT_Tree_BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Tree_BinarySearchTree.swift; sourceTree = "<group>"; };
+		02C6755F1EC8701F003A6DA9 /* XALG_ADT_Tree_BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Tree_BinaryTree.swift; sourceTree = "<group>"; };
+		02C675601EC8701F003A6DA9 /* XALG_ADT_Tree_KaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Tree_KaryTree.swift; sourceTree = "<group>"; };
+		02C675621EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_BinaryTree_Traversal.swift; sourceTree = "<group>"; };
+		02C675631EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal__stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_BinaryTree_Traversal__stack.swift; sourceTree = "<group>"; };
+		02C675641EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal_base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_BinaryTree_Traversal_base.swift; sourceTree = "<group>"; };
+		02C675651EC8701F003A6DA9 /* XALG_Algo_BinaryTree_TraversalApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_BinaryTree_TraversalApplication.swift; sourceTree = "<group>"; };
+		02C675661EC8701F003A6DA9 /* XALG_Algo_KaryTree_Traversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_KaryTree_Traversal.swift; sourceTree = "<group>"; };
+		02C675691EC8701F003A6DA9 /* XALG_DS_TreeNode_BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_DS_TreeNode_BinaryTree.swift; sourceTree = "<group>"; };
+		02C6756C1EC8701F003A6DA9 /* XALG_Rep_TreeNode_BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_TreeNode_BinaryTree.swift; sourceTree = "<group>"; };
+		02C6756D1EC8701F003A6DA9 /* XALG_Rep_TreeNode_KaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_TreeNode_KaryTree.swift; sourceTree = "<group>"; };
+		02C6756E1EC8701F003A6DA9 /* XALG_Rep_Tree_BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Tree_BinarySearchTree.swift; sourceTree = "<group>"; };
+		02C6756F1EC8701F003A6DA9 /* XALG_Rep_Tree_HuffmanTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Tree_HuffmanTree.swift; sourceTree = "<group>"; };
+		02C675701EC8701F003A6DA9 /* XALG_Rep_Tree_KaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Rep_Tree_KaryTree.swift; sourceTree = "<group>"; };
+		02C675711EC8701F003A6DA9 /* XALG_ThreadedBinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ThreadedBinaryTree.swift; sourceTree = "<group>"; };
+		02C675721EC8701F003A6DA9 /* XALG_Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tree.swift; sourceTree = "<group>"; };
+		02C675731EC8701F003A6DA9 /* XALG_Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Path.swift; sourceTree = "<group>"; };
+		02C675741EC8701F003A6DA9 /* XALG_Visit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Visit.swift; sourceTree = "<group>"; };
+		02C675781EC8701F003A6DA9 /* XALG-IO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "XALG-IO.xcdatamodel"; sourceTree = "<group>"; };
+		02C6757A1EC8701F003A6DA9 /* XALG_FSLoader_BinaryTree_linebased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_FSLoader_BinaryTree_linebased.swift; sourceTree = "<group>"; };
+		02C6757C1EC8701F003A6DA9 /* XALG_Decoder_Graph__linebased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Decoder_Graph__linebased.swift; sourceTree = "<group>"; };
+		02C6757D1EC8701F003A6DA9 /* XALG_FSLoader_Graph__linebased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_FSLoader_Graph__linebased.swift; sourceTree = "<group>"; };
+		02C675C61EC8702A003A6DA9 /* data-graph-aoe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "data-graph-aoe.txt"; sourceTree = "<group>"; };
+		02C675C71EC8702A003A6DA9 /* XALG_Tests_Graph_CP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Graph_CP.swift; sourceTree = "<group>"; };
+		02C675C81EC8702A003A6DA9 /* data-graph-aov.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "data-graph-aov.txt"; sourceTree = "<group>"; };
+		02C675C91EC8702A003A6DA9 /* data-graph.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "data-graph.txt"; sourceTree = "<group>"; };
+		02C675CB1EC8702A003A6DA9 /* data-graph-directed-weighted-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "data-graph-directed-weighted-1.txt"; sourceTree = "<group>"; };
+		02C675CC1EC8702A003A6DA9 /* XALG_Tests_Graph_SSSP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Graph_SSSP.swift; sourceTree = "<group>"; };
+		02C675CE1EC8702A003A6DA9 /* data-graph-aov-topsort.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "data-graph-aov-topsort.txt"; sourceTree = "<group>"; };
+		02C675D01EC8702A003A6DA9 /* data-graph-traversal.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "data-graph-traversal.txt"; sourceTree = "<group>"; };
+		02C675D11EC8702A003A6DA9 /* XALG_Tests_Graph_Traversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Graph_Traversal.swift; sourceTree = "<group>"; };
+		02C675D21EC8702A003A6DA9 /* XALG_Tests_Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Graph.swift; sourceTree = "<group>"; };
+		02C675D31EC8702A003A6DA9 /* XALG_Tests_Graph_IO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Graph_IO.swift; sourceTree = "<group>"; };
+		02C675D41EC8702A003A6DA9 /* XALG_Tests_Graph_TopologicalSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Graph_TopologicalSort.swift; sourceTree = "<group>"; };
+		02C675D51EC8702A003A6DA9 /* XALG_Tests_Graph_Weighted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Graph_Weighted.swift; sourceTree = "<group>"; };
+		02C675D71EC8702A003A6DA9 /* XALG_Tests_Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Heap.swift; sourceTree = "<group>"; };
+		02C675D81EC8702A003A6DA9 /* XALG_Tests_PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_PriorityQueue.swift; sourceTree = "<group>"; };
+		02C675D91EC8702A003A6DA9 /* XALG_Tests_Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Queue.swift; sourceTree = "<group>"; };
+		02C675DA1EC8702A003A6DA9 /* XALG_Tests_Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_Stack.swift; sourceTree = "<group>"; };
+		02C675DC1EC8702A003A6DA9 /* data-binarytree.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "data-binarytree.plist"; sourceTree = "<group>"; };
+		02C675DE1EC8702A003A6DA9 /* BinaryTree-sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BinaryTree-sample.txt"; sourceTree = "<group>"; };
+		02C675DF1EC8702A003A6DA9 /* XALG_Tests_AVLTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_AVLTree.swift; sourceTree = "<group>"; };
+		02C675E01EC8702A003A6DA9 /* XALG_Tests_BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_BinarySearchTree.swift; sourceTree = "<group>"; };
+		02C675E11EC8702A003A6DA9 /* XALG_Tests_BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_BinaryTree.swift; sourceTree = "<group>"; };
+		02C675E21EC8702A003A6DA9 /* XALG_Tests_HuffmanTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_HuffmanTree.swift; sourceTree = "<group>"; };
+		02C675E31EC8702A003A6DA9 /* XALG_Tests_KaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_KaryTree.swift; sourceTree = "<group>"; };
+		02E991F21EBF0C4D009BF5E8 /* XALG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XALG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E991F51EBF0C4D009BF5E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02E991F71EBF0C4D009BF5E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02E991FC1EBF0C4D009BF5E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02E991FF1EBF0C4D009BF5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02E992011EBF0C4E009BF5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E992061EBF0C4E009BF5E8 /* XALGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XALGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E9920C1EBF0C4E009BF5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02E991EF1EBF0C4D009BF5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E992031EBF0C4E009BF5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C6751C1EC8701F003A6DA9 /* Framework-XALG */ = {
+			isa = PBXGroup;
+			children = (
+				02C6751D1EC8701F003A6DA9 /* 2-Operation */,
+				02C6751F1EC8701F003A6DA9 /* GKRandomSource+XALG.swift */,
+				02C675201EC8701F003A6DA9 /* Graph */,
+				02C6753F1EC8701F003A6DA9 /* Linear */,
+				02C6754F1EC8701F003A6DA9 /* Sort */,
+				02C675571EC8701F003A6DA9 /* Tree */,
+				02C675731EC8701F003A6DA9 /* XALG_Path.swift */,
+				02C675741EC8701F003A6DA9 /* XALG_Visit.swift */,
+			);
+			name = "Framework-XALG";
+			path = "../../frameworks/Framework-XALG";
+			sourceTree = "<group>";
+		};
+		02C6751D1EC8701F003A6DA9 /* 2-Operation */ = {
+			isa = PBXGroup;
+			children = (
+				02C6751E1EC8701F003A6DA9 /* XALG_Operation.swift */,
+			);
+			path = "2-Operation";
+			sourceTree = "<group>";
+		};
+		02C675201EC8701F003A6DA9 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				02C675211EC8701F003A6DA9 /* ADT */,
+				02C675261EC8701F003A6DA9 /* Algo */,
+				02C675341EC8701F003A6DA9 /* DS */,
+				02C675391EC8701F003A6DA9 /* Rep */,
+				02C6753D1EC8701F003A6DA9 /* XALG_Error_Graph.swift */,
+				02C6753E1EC8701F003A6DA9 /* XALG_WeightType.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		02C675211EC8701F003A6DA9 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				02C675221EC8701F003A6DA9 /* XALG_ADT_Edge.swift */,
+				02C675231EC8701F003A6DA9 /* XALG_ADT_Graph+ForVertex.swift */,
+				02C675241EC8701F003A6DA9 /* XALG_ADT_Graph.swift */,
+				02C675251EC8701F003A6DA9 /* XALG_ADT_Vertex.swift */,
+			);
+			path = ADT;
+			sourceTree = "<group>";
+		};
+		02C675261EC8701F003A6DA9 /* Algo */ = {
+			isa = PBXGroup;
+			children = (
+				02C675271EC8701F003A6DA9 /* MST */,
+				02C675291EC8701F003A6DA9 /* SSSP */,
+				02C6752D1EC8701F003A6DA9 /* Traversal */,
+				02C675311EC8701F003A6DA9 /* XALG_Algo_Graph.swift */,
+				02C675321EC8701F003A6DA9 /* XALG_Algo_Graph_CritialPath.swift */,
+				02C675331EC8701F003A6DA9 /* XALG_Algo_Graph_TopologicalSorting.swift */,
+			);
+			path = Algo;
+			sourceTree = "<group>";
+		};
+		02C675271EC8701F003A6DA9 /* MST */ = {
+			isa = PBXGroup;
+			children = (
+				02C675281EC8701F003A6DA9 /* XALG_Algo_Graph_MST.swift */,
+			);
+			path = MST;
+			sourceTree = "<group>";
+		};
+		02C675291EC8701F003A6DA9 /* SSSP */ = {
+			isa = PBXGroup;
+			children = (
+				02C6752A1EC8701F003A6DA9 /* XALG_Algo_Graph_BellmanFord.swift */,
+				02C6752B1EC8701F003A6DA9 /* XALG_Algo_Graph_Dijkstra.swift */,
+				02C6752C1EC8701F003A6DA9 /* XALG_Algo_Graph_SSSP.swift */,
+			);
+			path = SSSP;
+			sourceTree = "<group>";
+		};
+		02C6752D1EC8701F003A6DA9 /* Traversal */ = {
+			isa = PBXGroup;
+			children = (
+				02C6752E1EC8701F003A6DA9 /* XALG_Algo_Graph_BFS.swift */,
+				02C6752F1EC8701F003A6DA9 /* XALG_Algo_Graph_DFS.swift */,
+				02C675301EC8701F003A6DA9 /* XALG_Algo_Graph_Traversal_base.swift */,
+			);
+			path = Traversal;
+			sourceTree = "<group>";
+		};
+		02C675341EC8701F003A6DA9 /* DS */ = {
+			isa = PBXGroup;
+			children = (
+				02C675351EC8701F003A6DA9 /* Element */,
+				02C675381EC8701F003A6DA9 /* XALG_DS_Graph__VertexEdgeArray.swift */,
+			);
+			path = DS;
+			sourceTree = "<group>";
+		};
+		02C675351EC8701F003A6DA9 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				02C675361EC8701F003A6DA9 /* XALG_DS_GraphEdge.swift */,
+				02C675371EC8701F003A6DA9 /* XALG_DS_GraphVertex.swift */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		02C675391EC8701F003A6DA9 /* Rep */ = {
+			isa = PBXGroup;
+			children = (
+				02C6753A1EC8701F003A6DA9 /* XALG_Rep_Graph.swift */,
+				02C6753B1EC8701F003A6DA9 /* XALG_Rep_Graph_AdjacencyList.swift */,
+				02C6753C1EC8701F003A6DA9 /* XALG_Rep_Graph_Weighted.swift */,
+			);
+			path = Rep;
+			sourceTree = "<group>";
+		};
+		02C6753F1EC8701F003A6DA9 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				02C675401EC8701F003A6DA9 /* ADT */,
+				02C675451EC8701F003A6DA9 /* DS */,
+				02C675491EC8701F003A6DA9 /* Rep */,
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+		02C675401EC8701F003A6DA9 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				02C675411EC8701F003A6DA9 /* XALG_ADT_Heap.swift */,
+				02C675421EC8701F003A6DA9 /* XALG_ADT_PriorityQueue.swift */,
+				02C675431EC8701F003A6DA9 /* XALG_ADT_Queue.swift */,
+				02C675441EC8701F003A6DA9 /* XALG_ADT_Stack.swift */,
+			);
+			path = ADT;
+			sourceTree = "<group>";
+		};
+		02C675451EC8701F003A6DA9 /* DS */ = {
+			isa = PBXGroup;
+			children = (
+				02C675461EC8701F003A6DA9 /* XALG_DS_Queue__Array.swift */,
+				02C675471EC8701F003A6DA9 /* XALG_DS_Stack.swift */,
+				02C675481EC8701F003A6DA9 /* XALG_DS_Stack__LinkedList_struct.swift */,
+			);
+			path = DS;
+			sourceTree = "<group>";
+		};
+		02C675491EC8701F003A6DA9 /* Rep */ = {
+			isa = PBXGroup;
+			children = (
+				02C6754A1EC8701F003A6DA9 /* XALG_Rep_Heap.swift */,
+				02C6754B1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__CFBinaryHeap.swift */,
+				02C6754C1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__Heap.swift */,
+				02C6754D1EC8701F003A6DA9 /* XALG_Rep_Queue__LinkedList.swift */,
+				02C6754E1EC8701F003A6DA9 /* XALG_Rep_Stack_LinkedList.swift */,
+			);
+			path = Rep;
+			sourceTree = "<group>";
+		};
+		02C6754F1EC8701F003A6DA9 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				02C675501EC8701F003A6DA9 /* XALG_Sort.swift */,
+				02C675511EC8701F003A6DA9 /* XALG_Sort_InsertionSort.swift */,
+				02C675521EC8701F003A6DA9 /* XALG_Sort_MergeSort.swift */,
+				02C675531EC8701F003A6DA9 /* XALG_Sort_MergeSort__iterative.swift */,
+				02C675541EC8701F003A6DA9 /* XALG_Sort_QuickSort.swift */,
+				02C675551EC8701F003A6DA9 /* XALG_Sort_SelectionSort.swift */,
+				02C675561EC8701F003A6DA9 /* XALG_Sort_ShellSort.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		02C675571EC8701F003A6DA9 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				02C675581EC8701F003A6DA9 /* ADT */,
+				02C675611EC8701F003A6DA9 /* Algo */,
+				02C675671EC8701F003A6DA9 /* DS */,
+				02C6756A1EC8701F003A6DA9 /* Rep */,
+				02C675711EC8701F003A6DA9 /* XALG_ThreadedBinaryTree.swift */,
+				02C675721EC8701F003A6DA9 /* XALG_Tree.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		02C675581EC8701F003A6DA9 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				02C675591EC8701F003A6DA9 /* Node */,
+				02C6755E1EC8701F003A6DA9 /* XALG_ADT_Tree_BinarySearchTree.swift */,
+				02C6755F1EC8701F003A6DA9 /* XALG_ADT_Tree_BinaryTree.swift */,
+				02C675601EC8701F003A6DA9 /* XALG_ADT_Tree_KaryTree.swift */,
+			);
+			path = ADT;
+			sourceTree = "<group>";
+		};
+		02C675591EC8701F003A6DA9 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				02C6755A1EC8701F003A6DA9 /* XALG_ADT_TreeNode.swift */,
+				02C6755B1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinarySearchTree.swift */,
+				02C6755C1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinaryTree.swift */,
+				02C6755D1EC8701F003A6DA9 /* XALG_ADT_TreeNode_KaryTree.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		02C675611EC8701F003A6DA9 /* Algo */ = {
+			isa = PBXGroup;
+			children = (
+				02C675621EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal.swift */,
+				02C675631EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal__stack.swift */,
+				02C675641EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal_base.swift */,
+				02C675651EC8701F003A6DA9 /* XALG_Algo_BinaryTree_TraversalApplication.swift */,
+				02C675661EC8701F003A6DA9 /* XALG_Algo_KaryTree_Traversal.swift */,
+			);
+			path = Algo;
+			sourceTree = "<group>";
+		};
+		02C675671EC8701F003A6DA9 /* DS */ = {
+			isa = PBXGroup;
+			children = (
+				02C675681EC8701F003A6DA9 /* Node */,
+			);
+			path = DS;
+			sourceTree = "<group>";
+		};
+		02C675681EC8701F003A6DA9 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				02C675691EC8701F003A6DA9 /* XALG_DS_TreeNode_BinaryTree.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		02C6756A1EC8701F003A6DA9 /* Rep */ = {
+			isa = PBXGroup;
+			children = (
+				02C6756B1EC8701F003A6DA9 /* Node */,
+				02C6756E1EC8701F003A6DA9 /* XALG_Rep_Tree_BinarySearchTree.swift */,
+				02C6756F1EC8701F003A6DA9 /* XALG_Rep_Tree_HuffmanTree.swift */,
+				02C675701EC8701F003A6DA9 /* XALG_Rep_Tree_KaryTree.swift */,
+			);
+			path = Rep;
+			sourceTree = "<group>";
+		};
+		02C6756B1EC8701F003A6DA9 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				02C6756C1EC8701F003A6DA9 /* XALG_Rep_TreeNode_BinaryTree.swift */,
+				02C6756D1EC8701F003A6DA9 /* XALG_Rep_TreeNode_KaryTree.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		02C675751EC8701F003A6DA9 /* Framework-XALG-IO */ = {
+			isa = PBXGroup;
+			children = (
+				02C675761EC8701F003A6DA9 /* 2-CDModel */,
+				02C675791EC8701F003A6DA9 /* 3-Encoder-Decoder */,
+				02C6757B1EC8701F003A6DA9 /* 4-FSLoader */,
+			);
+			name = "Framework-XALG-IO";
+			path = "../../frameworks/Framework-XALG-IO";
+			sourceTree = "<group>";
+		};
+		02C675761EC8701F003A6DA9 /* 2-CDModel */ = {
+			isa = PBXGroup;
+			children = (
+				02C675771EC8701F003A6DA9 /* XALG-IO.xcdatamodeld */,
+			);
+			path = "2-CDModel";
+			sourceTree = "<group>";
+		};
+		02C675791EC8701F003A6DA9 /* 3-Encoder-Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				02C6757A1EC8701F003A6DA9 /* XALG_FSLoader_BinaryTree_linebased.swift */,
+			);
+			path = "3-Encoder-Decoder";
+			sourceTree = "<group>";
+		};
+		02C6757B1EC8701F003A6DA9 /* 4-FSLoader */ = {
+			isa = PBXGroup;
+			children = (
+				02C6757C1EC8701F003A6DA9 /* XALG_Decoder_Graph__linebased.swift */,
+				02C6757D1EC8701F003A6DA9 /* XALG_FSLoader_Graph__linebased.swift */,
+			);
+			path = "4-FSLoader";
+			sourceTree = "<group>";
+		};
+		02C675C31EC8702A003A6DA9 /* Framework-XALG-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				02C675C41EC8702A003A6DA9 /* Graph */,
+				02C675D61EC8702A003A6DA9 /* Linear */,
+				02C675DB1EC8702A003A6DA9 /* Tree */,
+			);
+			name = "Framework-XALG-Tests";
+			path = "../../../frameworks/Framework-XALG-Tests";
+			sourceTree = "<group>";
+		};
+		02C675C41EC8702A003A6DA9 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				02C675C51EC8702A003A6DA9 /* CP */,
+				02C675C81EC8702A003A6DA9 /* data-graph-aov.txt */,
+				02C675C91EC8702A003A6DA9 /* data-graph.txt */,
+				02C675CA1EC8702A003A6DA9 /* SSSP */,
+				02C675CD1EC8702A003A6DA9 /* TopologicalSort */,
+				02C675CF1EC8702A003A6DA9 /* Traversal */,
+				02C675D21EC8702A003A6DA9 /* XALG_Tests_Graph.swift */,
+				02C675D31EC8702A003A6DA9 /* XALG_Tests_Graph_IO.swift */,
+				02C675D41EC8702A003A6DA9 /* XALG_Tests_Graph_TopologicalSort.swift */,
+				02C675D51EC8702A003A6DA9 /* XALG_Tests_Graph_Weighted.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		02C675C51EC8702A003A6DA9 /* CP */ = {
+			isa = PBXGroup;
+			children = (
+				02C675C61EC8702A003A6DA9 /* data-graph-aoe.txt */,
+				02C675C71EC8702A003A6DA9 /* XALG_Tests_Graph_CP.swift */,
+			);
+			path = CP;
+			sourceTree = "<group>";
+		};
+		02C675CA1EC8702A003A6DA9 /* SSSP */ = {
+			isa = PBXGroup;
+			children = (
+				02C675CB1EC8702A003A6DA9 /* data-graph-directed-weighted-1.txt */,
+				02C675CC1EC8702A003A6DA9 /* XALG_Tests_Graph_SSSP.swift */,
+			);
+			path = SSSP;
+			sourceTree = "<group>";
+		};
+		02C675CD1EC8702A003A6DA9 /* TopologicalSort */ = {
+			isa = PBXGroup;
+			children = (
+				02C675CE1EC8702A003A6DA9 /* data-graph-aov-topsort.txt */,
+			);
+			path = TopologicalSort;
+			sourceTree = "<group>";
+		};
+		02C675CF1EC8702A003A6DA9 /* Traversal */ = {
+			isa = PBXGroup;
+			children = (
+				02C675D01EC8702A003A6DA9 /* data-graph-traversal.txt */,
+				02C675D11EC8702A003A6DA9 /* XALG_Tests_Graph_Traversal.swift */,
+			);
+			path = Traversal;
+			sourceTree = "<group>";
+		};
+		02C675D61EC8702A003A6DA9 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				02C675D71EC8702A003A6DA9 /* XALG_Tests_Heap.swift */,
+				02C675D81EC8702A003A6DA9 /* XALG_Tests_PriorityQueue.swift */,
+				02C675D91EC8702A003A6DA9 /* XALG_Tests_Queue.swift */,
+				02C675DA1EC8702A003A6DA9 /* XALG_Tests_Stack.swift */,
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+		02C675DB1EC8702A003A6DA9 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				02C675DC1EC8702A003A6DA9 /* data-binarytree.plist */,
+				02C675DD1EC8702A003A6DA9 /* IO */,
+				02C675DF1EC8702A003A6DA9 /* XALG_Tests_AVLTree.swift */,
+				02C675E01EC8702A003A6DA9 /* XALG_Tests_BinarySearchTree.swift */,
+				02C675E11EC8702A003A6DA9 /* XALG_Tests_BinaryTree.swift */,
+				02C675E21EC8702A003A6DA9 /* XALG_Tests_HuffmanTree.swift */,
+				02C675E31EC8702A003A6DA9 /* XALG_Tests_KaryTree.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		02C675DD1EC8702A003A6DA9 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				02C675DE1EC8702A003A6DA9 /* BinaryTree-sample.txt */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		02E991E91EBF0C4D009BF5E8 = {
+			isa = PBXGroup;
+			children = (
+				02C6751C1EC8701F003A6DA9 /* Framework-XALG */,
+				02C675751EC8701F003A6DA9 /* Framework-XALG-IO */,
+				02E991F41EBF0C4D009BF5E8 /* XALG */,
+				02E992091EBF0C4E009BF5E8 /* XALGTests */,
+				02E991F31EBF0C4D009BF5E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02E991F31EBF0C4D009BF5E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02E991F21EBF0C4D009BF5E8 /* XALG.app */,
+				02E992061EBF0C4E009BF5E8 /* XALGTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02E991F41EBF0C4D009BF5E8 /* XALG */ = {
+			isa = PBXGroup;
+			children = (
+				02E991F51EBF0C4D009BF5E8 /* AppDelegate.swift */,
+				02E991F71EBF0C4D009BF5E8 /* ViewController.swift */,
+				02E991FC1EBF0C4D009BF5E8 /* Assets.xcassets */,
+				02E991FE1EBF0C4D009BF5E8 /* LaunchScreen.storyboard */,
+				02E992011EBF0C4E009BF5E8 /* Info.plist */,
+			);
+			path = XALG;
+			sourceTree = "<group>";
+		};
+		02E992091EBF0C4E009BF5E8 /* XALGTests */ = {
+			isa = PBXGroup;
+			children = (
+				02C675C31EC8702A003A6DA9 /* Framework-XALG-Tests */,
+				02E9920C1EBF0C4E009BF5E8 /* Info.plist */,
+			);
+			path = XALGTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02E991F11EBF0C4D009BF5E8 /* XALG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E9920F1EBF0C4E009BF5E8 /* Build configuration list for PBXNativeTarget "XALG" */;
+			buildPhases = (
+				02E991EE1EBF0C4D009BF5E8 /* Sources */,
+				02E991EF1EBF0C4D009BF5E8 /* Frameworks */,
+				02E991F01EBF0C4D009BF5E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XALG;
+			productName = XALG;
+			productReference = 02E991F21EBF0C4D009BF5E8 /* XALG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02E992051EBF0C4E009BF5E8 /* XALGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02E992121EBF0C4E009BF5E8 /* Build configuration list for PBXNativeTarget "XALGTests" */;
+			buildPhases = (
+				02E992021EBF0C4E009BF5E8 /* Sources */,
+				02E992031EBF0C4E009BF5E8 /* Frameworks */,
+				02E992041EBF0C4E009BF5E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02E992081EBF0C4E009BF5E8 /* PBXTargetDependency */,
+			);
+			name = XALGTests;
+			productName = XALGTests;
+			productReference = 02E992061EBF0C4E009BF5E8 /* XALGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02E991EA1EBF0C4D009BF5E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Juguang Xiao";
+				TargetAttributes = {
+					02E991F11EBF0C4D009BF5E8 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5823N3XW52;
+						ProvisioningStyle = Automatic;
+					};
+					02E992051EBF0C4E009BF5E8 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5823N3XW52;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 02E991F11EBF0C4D009BF5E8;
+					};
+				};
+			};
+			buildConfigurationList = 02E991ED1EBF0C4D009BF5E8 /* Build configuration list for PBXProject "XALG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02E991E91EBF0C4D009BF5E8;
+			productRefGroup = 02E991F31EBF0C4D009BF5E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02E991F11EBF0C4D009BF5E8 /* XALG */,
+				02E992051EBF0C4E009BF5E8 /* XALGTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02E991F01EBF0C4D009BF5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E992001EBF0C4D009BF5E8 /* LaunchScreen.storyboard in Resources */,
+				02E991FD1EBF0C4D009BF5E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E992041EBF0C4E009BF5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C675E71EC8702A003A6DA9 /* data-graph.txt in Resources */,
+				02C675E61EC8702A003A6DA9 /* data-graph-aov.txt in Resources */,
+				02C675EB1EC8702A003A6DA9 /* data-graph-traversal.txt in Resources */,
+				02C675E81EC8702A003A6DA9 /* data-graph-directed-weighted-1.txt in Resources */,
+				02C675EA1EC8702A003A6DA9 /* data-graph-aov-topsort.txt in Resources */,
+				02C675F51EC8702A003A6DA9 /* data-binarytree.plist in Resources */,
+				02C675E41EC8702A003A6DA9 /* data-graph-aoe.txt in Resources */,
+				02C675F61EC8702A003A6DA9 /* BinaryTree-sample.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02E991EE1EBF0C4D009BF5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E991F81EBF0C4D009BF5E8 /* ViewController.swift in Sources */,
+				02E991F61EBF0C4D009BF5E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02E992021EBF0C4E009BF5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C675B61EC8701F003A6DA9 /* XALG_Rep_TreeNode_BinaryTree.swift in Sources */,
+				02C675BB1EC8701F003A6DA9 /* XALG_ThreadedBinaryTree.swift in Sources */,
+				02C675BD1EC8701F003A6DA9 /* XALG_Path.swift in Sources */,
+				02C675991EC8701F003A6DA9 /* XALG_ADT_Stack.swift in Sources */,
+				02C675BA1EC8701F003A6DA9 /* XALG_Rep_Tree_KaryTree.swift in Sources */,
+				02C6758E1EC8701F003A6DA9 /* XALG_DS_GraphEdge.swift in Sources */,
+				02C675871EC8701F003A6DA9 /* XALG_Algo_Graph_SSSP.swift in Sources */,
+				02C675A11EC8701F003A6DA9 /* XALG_Rep_Stack_LinkedList.swift in Sources */,
+				02C675A21EC8701F003A6DA9 /* XALG_Sort.swift in Sources */,
+				02C675F71EC8702A003A6DA9 /* XALG_Tests_AVLTree.swift in Sources */,
+				02C675911EC8701F003A6DA9 /* XALG_Rep_Graph.swift in Sources */,
+				02C675AB1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinaryTree.swift in Sources */,
+				02C675931EC8701F003A6DA9 /* XALG_Rep_Graph_Weighted.swift in Sources */,
+				02C675C21EC8701F003A6DA9 /* XALG_FSLoader_Graph__linebased.swift in Sources */,
+				02C675F21EC8702A003A6DA9 /* XALG_Tests_PriorityQueue.swift in Sources */,
+				02C675861EC8701F003A6DA9 /* XALG_Algo_Graph_Dijkstra.swift in Sources */,
+				02C675951EC8701F003A6DA9 /* XALG_WeightType.swift in Sources */,
+				02C675851EC8701F003A6DA9 /* XALG_Algo_Graph_BellmanFord.swift in Sources */,
+				02C675C01EC8701F003A6DA9 /* XALG_FSLoader_BinaryTree_linebased.swift in Sources */,
+				02C675A71EC8701F003A6DA9 /* XALG_Sort_SelectionSort.swift in Sources */,
+				02C675A81EC8701F003A6DA9 /* XALG_Sort_ShellSort.swift in Sources */,
+				02C675F41EC8702A003A6DA9 /* XALG_Tests_Stack.swift in Sources */,
+				02C675B51EC8701F003A6DA9 /* XALG_DS_TreeNode_BinaryTree.swift in Sources */,
+				02C675AE1EC8701F003A6DA9 /* XALG_ADT_Tree_BinaryTree.swift in Sources */,
+				02C675ED1EC8702A003A6DA9 /* XALG_Tests_Graph.swift in Sources */,
+				02C675AF1EC8701F003A6DA9 /* XALG_ADT_Tree_KaryTree.swift in Sources */,
+				02C675A01EC8701F003A6DA9 /* XALG_Rep_Queue__LinkedList.swift in Sources */,
+				02C675EF1EC8702A003A6DA9 /* XALG_Tests_Graph_TopologicalSort.swift in Sources */,
+				02C675FB1EC8702A003A6DA9 /* XALG_Tests_KaryTree.swift in Sources */,
+				02C675971EC8701F003A6DA9 /* XALG_ADT_PriorityQueue.swift in Sources */,
+				02C675901EC8701F003A6DA9 /* XALG_DS_Graph__VertexEdgeArray.swift in Sources */,
+				02C675AC1EC8701F003A6DA9 /* XALG_ADT_TreeNode_KaryTree.swift in Sources */,
+				02C675C11EC8701F003A6DA9 /* XALG_Decoder_Graph__linebased.swift in Sources */,
+				02C675961EC8701F003A6DA9 /* XALG_ADT_Heap.swift in Sources */,
+				02C675F11EC8702A003A6DA9 /* XALG_Tests_Heap.swift in Sources */,
+				02C675F31EC8702A003A6DA9 /* XALG_Tests_Queue.swift in Sources */,
+				02C675881EC8701F003A6DA9 /* XALG_Algo_Graph_BFS.swift in Sources */,
+				02C675A31EC8701F003A6DA9 /* XALG_Sort_InsertionSort.swift in Sources */,
+				02C675FA1EC8702A003A6DA9 /* XALG_Tests_HuffmanTree.swift in Sources */,
+				02C675A41EC8701F003A6DA9 /* XALG_Sort_MergeSort.swift in Sources */,
+				02C6758D1EC8701F003A6DA9 /* XALG_Algo_Graph_TopologicalSorting.swift in Sources */,
+				02C6759A1EC8701F003A6DA9 /* XALG_DS_Queue__Array.swift in Sources */,
+				02C675841EC8701F003A6DA9 /* XALG_Algo_Graph_MST.swift in Sources */,
+				02C675EC1EC8702A003A6DA9 /* XALG_Tests_Graph_Traversal.swift in Sources */,
+				02C675A51EC8701F003A6DA9 /* XALG_Sort_MergeSort__iterative.swift in Sources */,
+				02C675A91EC8701F003A6DA9 /* XALG_ADT_TreeNode.swift in Sources */,
+				02C6758F1EC8701F003A6DA9 /* XALG_DS_GraphVertex.swift in Sources */,
+				02C6759C1EC8701F003A6DA9 /* XALG_DS_Stack__LinkedList_struct.swift in Sources */,
+				02C675F01EC8702A003A6DA9 /* XALG_Tests_Graph_Weighted.swift in Sources */,
+				02C675BE1EC8701F003A6DA9 /* XALG_Visit.swift in Sources */,
+				02C675BC1EC8701F003A6DA9 /* XALG_Tree.swift in Sources */,
+				02C675AD1EC8701F003A6DA9 /* XALG_ADT_Tree_BinarySearchTree.swift in Sources */,
+				02C675F81EC8702A003A6DA9 /* XALG_Tests_BinarySearchTree.swift in Sources */,
+				02C675B41EC8701F003A6DA9 /* XALG_Algo_KaryTree_Traversal.swift in Sources */,
+				02C6758C1EC8701F003A6DA9 /* XALG_Algo_Graph_CritialPath.swift in Sources */,
+				02C675821EC8701F003A6DA9 /* XALG_ADT_Graph.swift in Sources */,
+				02C675B71EC8701F003A6DA9 /* XALG_Rep_TreeNode_KaryTree.swift in Sources */,
+				02C675831EC8701F003A6DA9 /* XALG_ADT_Vertex.swift in Sources */,
+				02C675B01EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal.swift in Sources */,
+				02C6758B1EC8701F003A6DA9 /* XALG_Algo_Graph.swift in Sources */,
+				02C675AA1EC8701F003A6DA9 /* XALG_ADT_TreeNode_BinarySearchTree.swift in Sources */,
+				02C675A61EC8701F003A6DA9 /* XALG_Sort_QuickSort.swift in Sources */,
+				02C6759F1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__Heap.swift in Sources */,
+				02C675941EC8701F003A6DA9 /* XALG_Error_Graph.swift in Sources */,
+				02C6759B1EC8701F003A6DA9 /* XALG_DS_Stack.swift in Sources */,
+				02C675E51EC8702A003A6DA9 /* XALG_Tests_Graph_CP.swift in Sources */,
+				02C675891EC8701F003A6DA9 /* XALG_Algo_Graph_DFS.swift in Sources */,
+				02C675801EC8701F003A6DA9 /* XALG_ADT_Edge.swift in Sources */,
+				02C675B11EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal__stack.swift in Sources */,
+				02C675B81EC8701F003A6DA9 /* XALG_Rep_Tree_BinarySearchTree.swift in Sources */,
+				02C6757E1EC8701F003A6DA9 /* XALG_Operation.swift in Sources */,
+				02C675BF1EC8701F003A6DA9 /* XALG-IO.xcdatamodeld in Sources */,
+				02C675E91EC8702A003A6DA9 /* XALG_Tests_Graph_SSSP.swift in Sources */,
+				02C675F91EC8702A003A6DA9 /* XALG_Tests_BinaryTree.swift in Sources */,
+				02C675811EC8701F003A6DA9 /* XALG_ADT_Graph+ForVertex.swift in Sources */,
+				02C675EE1EC8702A003A6DA9 /* XALG_Tests_Graph_IO.swift in Sources */,
+				02C6759E1EC8701F003A6DA9 /* XALG_Rep_PriorityQueue__CFBinaryHeap.swift in Sources */,
+				02C6757F1EC8701F003A6DA9 /* GKRandomSource+XALG.swift in Sources */,
+				02C675981EC8701F003A6DA9 /* XALG_ADT_Queue.swift in Sources */,
+				02C6759D1EC8701F003A6DA9 /* XALG_Rep_Heap.swift in Sources */,
+				02C6758A1EC8701F003A6DA9 /* XALG_Algo_Graph_Traversal_base.swift in Sources */,
+				02C675B21EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal_base.swift in Sources */,
+				02C675921EC8701F003A6DA9 /* XALG_Rep_Graph_AdjacencyList.swift in Sources */,
+				02C675B31EC8701F003A6DA9 /* XALG_Algo_BinaryTree_TraversalApplication.swift in Sources */,
+				02C675B91EC8701F003A6DA9 /* XALG_Rep_Tree_HuffmanTree.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02E992081EBF0C4E009BF5E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02E991F11EBF0C4D009BF5E8 /* XALG */;
+			targetProxy = 02E992071EBF0C4E009BF5E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02E991FE1EBF0C4D009BF5E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02E991FF1EBF0C4D009BF5E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02E9920D1EBF0C4E009BF5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02E9920E1EBF0C4E009BF5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02E992101EBF0C4E009BF5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5823N3XW52;
+				INFOPLIST_FILE = XALG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = juguangxiao.XALG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		02E992111EBF0C4E009BF5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5823N3XW52;
+				INFOPLIST_FILE = XALG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = juguangxiao.XALG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		02E992131EBF0C4E009BF5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5823N3XW52;
+				INFOPLIST_FILE = XALGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = juguangxiao.XALGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XALG.app/XALG";
+			};
+			name = Debug;
+		};
+		02E992141EBF0C4E009BF5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5823N3XW52;
+				INFOPLIST_FILE = XALGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = juguangxiao.XALGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XALG.app/XALG";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02E991ED1EBF0C4D009BF5E8 /* Build configuration list for PBXProject "XALG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E9920D1EBF0C4E009BF5E8 /* Debug */,
+				02E9920E1EBF0C4E009BF5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E9920F1EBF0C4E009BF5E8 /* Build configuration list for PBXNativeTarget "XALG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E992101EBF0C4E009BF5E8 /* Debug */,
+				02E992111EBF0C4E009BF5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02E992121EBF0C4E009BF5E8 /* Build configuration list for PBXNativeTarget "XALGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E992131EBF0C4E009BF5E8 /* Debug */,
+				02E992141EBF0C4E009BF5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02C675771EC8701F003A6DA9 /* XALG-IO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02C675781EC8701F003A6DA9 /* XALG-IO.xcdatamodel */,
+			);
+			currentVersion = 02C675781EC8701F003A6DA9 /* XALG-IO.xcdatamodel */;
+			path = "XALG-IO.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 02E991EA1EBF0C4D009BF5E8 /* Project object */;
+}

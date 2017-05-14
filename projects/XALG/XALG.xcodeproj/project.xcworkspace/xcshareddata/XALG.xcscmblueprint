@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5BA24C7F1D8102FB8CCDB4B37A26E5FF0B7C8A3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5BA24C7F1D8102FB8CCDB4B37A26E5FF0B7C8A3D" : 9223372036854775807,
+    "76A49DC65C03BD4AB0AF39786B987481B528FCA7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EF7EE5AE-B2F2-4F2A-B64C-773D75D8F7AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5BA24C7F1D8102FB8CCDB4B37A26E5FF0B7C8A3D" : "x-apps\/",
+    "76A49DC65C03BD4AB0AF39786B987481B528FCA7" : "x-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "XALG",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "17\/5\/XALG\/XALG.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/between40and2\/x-apps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BA24C7F1D8102FB8CCDB4B37A26E5FF0B7C8A3D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/between40and2\/x-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76A49DC65C03BD4AB0AF39786B987481B528FCA7"
+    }
+  ]
+}
