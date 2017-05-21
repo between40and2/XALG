@@ -104,6 +104,7 @@
 		02E991F81EBF0C4D009BF5E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E991F71EBF0C4D009BF5E8 /* ViewController.swift */; };
 		02E991FD1EBF0C4D009BF5E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E991FC1EBF0C4D009BF5E8 /* Assets.xcassets */; };
 		02E992001EBF0C4D009BF5E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E991FE1EBF0C4D009BF5E8 /* LaunchScreen.storyboard */; };
+		8C4539F21ECBE02000BACE40 /* XALG_Tests_TestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4539F11ECBE02000BACE40 /* XALG_Tests_TestObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,7 @@
 		02E992011EBF0C4E009BF5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E992061EBF0C4E009BF5E8 /* XALGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XALGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E9920C1EBF0C4E009BF5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4539F11ECBE02000BACE40 /* XALG_Tests_TestObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_TestObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -537,6 +539,7 @@
 				02C675C41EC8702A003A6DA9 /* Graph */,
 				02C675D61EC8702A003A6DA9 /* Linear */,
 				02C675DB1EC8702A003A6DA9 /* Tree */,
+				8C4539F11ECBE02000BACE40 /* XALG_Tests_TestObserver.swift */,
 			);
 			name = "Framework-XALG-Tests";
 			path = "../../../frameworks/Framework-XALG-Tests";
@@ -832,6 +835,7 @@
 				02C6758D1EC8701F003A6DA9 /* XALG_Algo_Graph_TopologicalSorting.swift in Sources */,
 				02C6759A1EC8701F003A6DA9 /* XALG_DS_Queue__Array.swift in Sources */,
 				02C675841EC8701F003A6DA9 /* XALG_Algo_Graph_MST.swift in Sources */,
+				8C4539F21ECBE02000BACE40 /* XALG_Tests_TestObserver.swift in Sources */,
 				02C675EC1EC8702A003A6DA9 /* XALG_Tests_Graph_Traversal.swift in Sources */,
 				02C675A51EC8701F003A6DA9 /* XALG_Sort_MergeSort__iterative.swift in Sources */,
 				02C675A91EC8701F003A6DA9 /* XALG_ADT_TreeNode.swift in Sources */,
