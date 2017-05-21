@@ -32,21 +32,23 @@ class XALG_Algo_Graph_Dijkstra<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_SS
     override func run() throws {
         initializeSingleSource()
         
-        graph!.vertex_.forEach{
+        
+        guard let g = graph else { throw XALG_Error_Graph_Algo.graphAbsent }
+        
+        g.vertex_.forEach{
             pq.enqueue($0)
         }
-        
-        let g_w = graph! 
+    
         
         while let u = pq.dequeue() {
             
             processedVertex_.insert(u)
             
-            for (v, e) in graph!.adjecentVertexEdgeTuple_(forVertex: u) {
+            for (v, e) in g.adjecentVertexEdgeTuple_(forVertex: u) {
                 
                 if processedVertex_.contains(v) { continue}
                 let e_w = e as! G.EdgeType_Weighted
-                let w = g_w.weight(onEdge: e_w)
+                let w = g.weight(onEdge: e_w)
                 
                 relax(from: u, to: v, w: w)
 //                processedVertex_.insert(v)

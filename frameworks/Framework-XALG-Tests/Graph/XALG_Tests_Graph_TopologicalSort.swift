@@ -19,8 +19,38 @@ class XALG_Tests_Graph_TopologicalSort: XALG_Tests_Graph_datafromfile {
     
     private var _graph : G?
     
+    func test_TS_DFS() {
+        let topsort = XALG_Algo_Graph_TopologicalSorting__DFS<G>()
+        
+        topsort.graph = _graph!
+        try! topsort.run()
+        let sorted_ = topsort.sorted_!
+        sorted_.forEach { (v: XALG_DS_GraphVertex<String>) in
+            print(v.identifier)
+        }
+/*
+ v2
+ v5
+ v7
+ v1
+ v3
+ v6
+ v4
+ v8
+*/
     
-    func test_TopologicalSort() {
+        assert_array(sorted_, ident_a: "v1", isPriorTo: "v3")
+        assert_array(sorted_, ident_a: "v1", isPriorTo: "v6")
+        assert_array(sorted_, ident_a: "v1", isPriorTo: "v8")
+        assert_array(sorted_, ident_a: "v1", isPriorTo: "v4")
+        
+        assert_array(sorted_, ident_a: "v2", isPriorTo: "v5")
+        assert_array(sorted_, ident_a: "v2", isPriorTo: "v7")
+        assert_array(sorted_, ident_a: "v2", isPriorTo: "v8")
+
+    }
+    
+    func test_TS_Queue() {
         
         let topsort = XALG_Algo_Graph_TopologicalSorting__Queue<G>()
         
@@ -29,7 +59,14 @@ class XALG_Tests_Graph_TopologicalSort: XALG_Tests_Graph_datafromfile {
         let sorted_ = topsort.sorted_!
         print(topsort.sorted_!.map { $0.identifier })
         
-        assert_array( sorted_ , ident_a: "v1", isPriorTo: "v6")
+        assert_array(sorted_, ident_a: "v1", isPriorTo: "v3")
+        assert_array(sorted_, ident_a: "v1", isPriorTo: "v6")
+        assert_array(sorted_, ident_a: "v1", isPriorTo: "v8")
+        assert_array(sorted_, ident_a: "v1", isPriorTo: "v4")
+        
+        assert_array(sorted_, ident_a: "v2", isPriorTo: "v5")
+        assert_array(sorted_, ident_a: "v2", isPriorTo: "v7")
+        assert_array(sorted_, ident_a: "v2", isPriorTo: "v8")
         
         // ["v1", "v2", "v3", "v5", "v6", "v7", "v4", "v8"]
     }

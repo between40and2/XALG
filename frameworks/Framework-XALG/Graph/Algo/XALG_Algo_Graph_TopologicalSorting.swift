@@ -13,7 +13,13 @@ import Swift
 
 // https://github.com/raywenderlich/swift-algorithm-club/blob/master/Topological%20Sort/TopologicalSort1.swift
 
-class XALG_Algo_Graph_TopologicalSorting__DFS<GraphType : XALG_ADT_Graph> : XALG_Algo_Graph_base<GraphType >
+class XALG_Algo_Graph_TopologicalSorting_base<GraphType : XALG_ADT_Graph> : XALG_Algo_Graph_base<GraphType > {
+    
+    var sorted_ : [VertexType]?
+    
+}
+
+class XALG_Algo_Graph_TopologicalSorting__DFS<GraphType : XALG_ADT_Graph> : XALG_Algo_Graph_TopologicalSorting_base<GraphType >
 
 {
 
@@ -24,48 +30,51 @@ class XALG_Algo_Graph_TopologicalSorting__DFS<GraphType : XALG_ADT_Graph> : XALG
     
     override func run() throws {
         
-        fatalError("Under Construction")
+        guard let g = graph else { throw XALG_Error_Graph_Algo.graphAbsent }
         
-//        let s_ = graph!.vertex_.filter { return graph!.inDegree(forVertex: $0) == 0 }
-//        
-//        
-//        s_.forEach {
-//            
-//            recursive_dfs($0)
-//        }
+        g.vertex_.forEach{
+            visited_[$0] = false
+        }
+        
+        let s_ = g.vertex_.filter { return g.inDegree(forVertex: $0) == 0 }
+   
+        sorted_ = s_.map{recursive_dfs($0)}.reduce([], +).reversed()
+        
         
     }
     
     private func recursive_dfs(_ source : VertexType) -> Array<VertexType>{
         
+        
         var result = Array<VertexType>()
+        result.append(source)
+        visited_[source] = true
         
         let edgeKind : XALG_Enum_Graph_EdgeKindForVertex = graph!.directed ? .outEdge : .undirected
         
-        for e in graph!.edges(forVertex: source, edgeKind: edgeKind) {
-            if let visited = visited_[source], !visited  {
-                let v_another  = e.vertex_[1] as! VertexType
-                result = self.recursive_dfs(v_another) + result
+        let e_ = graph!.edges(forVertex: source, edgeKind: edgeKind)
+        for e in e_ {
+            let v_another  = e.vertex_[1] as! VertexType
+            if let visited = visited_[v_another], !visited  {
+                
+                result =  self.recursive_dfs(v_another) + result
             }
         }
-        
-        visited_[source] = true
         
         return result
     }
     
 }
 
-class XALG_Algo_Graph_TopologicalSorting__Queue<GraphType : XALG_ADT_Graph> : XALG_Algo_Graph_base<GraphType > {
+class XALG_Algo_Graph_TopologicalSorting__Queue<GraphType : XALG_ADT_Graph> : XALG_Algo_Graph_TopologicalSorting_base<GraphType > {
     
-    
+
     typealias VertexType = GraphType.VertexType
-    
     
     override func run() throws {
         sorted_  = Array<VertexType>()
         
-        let g = graph!
+        guard let g = graph else { throw XALG_Error_Graph_Algo.graphAbsent }
         
         var vertex_indegree_ : [AnyHashable : Int] = [:]
         for v in g.vertex_ {
@@ -73,8 +82,6 @@ class XALG_Algo_Graph_TopologicalSorting__Queue<GraphType : XALG_ADT_Graph> : XA
             let ind = g.inDegree(forVertex: v)
             print(v.identifier, ind)
             vertex_indegree_[v] = ind // g.inDegree(forVertex: v)
-            
-            
         }
         
         var vertex_visited_ : [AnyHashable : Bool ] = [:]
@@ -82,7 +89,7 @@ class XALG_Algo_Graph_TopologicalSorting__Queue<GraphType : XALG_ADT_Graph> : XA
 
         var queue = XALG_DS_Queue__Array<VertexType>()
         
-        for v in graph!.vertex_ {
+        for v in g.vertex_ {
             if g.inDegree(forVertex: v) == 0 {
                 queue.enqueue(v)
  
@@ -116,6 +123,6 @@ class XALG_Algo_Graph_TopologicalSorting__Queue<GraphType : XALG_ADT_Graph> : XA
         sorted_!.append(v)
     }
     
-    var sorted_ : [VertexType]?
+    
     
 }

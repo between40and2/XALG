@@ -26,7 +26,7 @@ class XALG_Tests_Heap: XCTestCase {
         h.insert(3)
         h.insert(1)
         
-               XCTAssert(h.remove()! == 1)
+        XCTAssert(h.remove()! == 1)
         XCTAssert(h.remove()! == 2)
         XCTAssert(h.remove()! == 3)
         XCTAssertNil(h.remove())

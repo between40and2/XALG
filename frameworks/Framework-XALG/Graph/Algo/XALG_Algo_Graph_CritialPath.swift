@@ -21,9 +21,8 @@ where G : XALG_ADT_Graph_Weighted
     var v_l_ = Dictionary<VertexType_Concrete , WeightType>()
     
     override func run() throws {
-        
-        
-        let g = graph! as! XALG_Rep_Graph_Weighted<G.VertexIdentifierType, G.WeightType>
+        guard let g = graph as? XALG_Rep_Graph_Weighted<G.VertexIdentifierType, G.WeightType> else { throw XALG_Error_Graph_Algo.graphAbsent }
+    
 
         
         v_e_ = Dictionary<VertexType_Concrete , WeightType>()

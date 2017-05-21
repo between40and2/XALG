@@ -19,13 +19,13 @@ class XALG_DS_GraphVertex<Identifier > : XALG_ADT_Vertex
     
     weak var graph : XALG_Rep_Graph<Identifier>?
     
-    fileprivate(set) var identifier: VertexIdentifier
+//    fileprivate(set)
+    
+    var identifier: VertexIdentifier
     
     init(_ ident: VertexIdentifier) {
         identifier = ident
     }
-    
-    
     
     
     // carrier of business data, in 2 ways

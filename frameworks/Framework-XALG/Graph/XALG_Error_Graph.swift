@@ -18,3 +18,7 @@ enum XALG_Error_Graph : Error {
     case hasCycle
     case hasNegativeWeightCycle
 }
+
+enum XALG_Error_Graph_Algo : Error {
+    case graphAbsent
+}

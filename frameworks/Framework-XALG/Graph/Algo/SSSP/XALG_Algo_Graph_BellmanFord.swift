@@ -12,14 +12,13 @@ import Swift
 class XALG_Algo_Graph_BellmanFord<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_SSSP<G> where G.VertexType : Hashable {
     
     override func run() throws {
-//        let vs = sourceVertex!
-        let g_w = graph!
-//        let v_ = graph!.vertex_
-        let e_ = graph!.edge_
+        guard let g_w = graph else { throw XALG_Error_Graph_Algo.graphAbsent }
+
+        let e_ = g_w.edge_
         
         initializeSingleSource()
         
-        for _ in 0..<graph!.vertex_.count - 1 {
+        for _ in 0..<g_w.vertex_.count - 1 {
             var weightsUpdated = false
             e_.forEach{ (e) in
                 let e_w = e as! G.EdgeType_Weighted
