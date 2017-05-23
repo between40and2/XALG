@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		029FC8A61ED4F05100D902AD /* XALG_Algo_Graph_LevelBFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FC8A51ED4F05100D902AD /* XALG_Algo_Graph_LevelBFS.swift */; };
+		029FC8A81ED4F22E00D902AD /* XALG_Algo_Graph_LexicographicBFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FC8A71ED4F22E00D902AD /* XALG_Algo_Graph_LexicographicBFS.swift */; };
 		02C6757E1EC8701F003A6DA9 /* XALG_Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6751E1EC8701F003A6DA9 /* XALG_Operation.swift */; };
 		02C6757F1EC8701F003A6DA9 /* GKRandomSource+XALG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6751F1EC8701F003A6DA9 /* GKRandomSource+XALG.swift */; };
 		02C675801EC8701F003A6DA9 /* XALG_ADT_Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675221EC8701F003A6DA9 /* XALG_ADT_Edge.swift */; };
@@ -118,6 +120,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		029FC8A51ED4F05100D902AD /* XALG_Algo_Graph_LevelBFS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_LevelBFS.swift; sourceTree = "<group>"; };
+		029FC8A71ED4F22E00D902AD /* XALG_Algo_Graph_LexicographicBFS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Algo_Graph_LexicographicBFS.swift; sourceTree = "<group>"; };
 		02C6751E1EC8701F003A6DA9 /* XALG_Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Operation.swift; sourceTree = "<group>"; };
 		02C6751F1EC8701F003A6DA9 /* GKRandomSource+XALG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GKRandomSource+XALG.swift"; sourceTree = "<group>"; };
 		02C675221EC8701F003A6DA9 /* XALG_ADT_Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_ADT_Edge.swift; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 				02C6752E1EC8701F003A6DA9 /* XALG_Algo_Graph_BFS.swift */,
 				02C6752F1EC8701F003A6DA9 /* XALG_Algo_Graph_DFS.swift */,
 				02C675301EC8701F003A6DA9 /* XALG_Algo_Graph_Traversal_base.swift */,
+				029FC8A51ED4F05100D902AD /* XALG_Algo_Graph_LevelBFS.swift */,
+				029FC8A71ED4F22E00D902AD /* XALG_Algo_Graph_LexicographicBFS.swift */,
 			);
 			path = Traversal;
 			sourceTree = "<group>";
@@ -836,6 +842,7 @@
 				02C6759A1EC8701F003A6DA9 /* XALG_DS_Queue__Array.swift in Sources */,
 				02C675841EC8701F003A6DA9 /* XALG_Algo_Graph_MST.swift in Sources */,
 				8C4539F21ECBE02000BACE40 /* XALG_Tests_TestObserver.swift in Sources */,
+				029FC8A81ED4F22E00D902AD /* XALG_Algo_Graph_LexicographicBFS.swift in Sources */,
 				02C675EC1EC8702A003A6DA9 /* XALG_Tests_Graph_Traversal.swift in Sources */,
 				02C675A51EC8701F003A6DA9 /* XALG_Sort_MergeSort__iterative.swift in Sources */,
 				02C675A91EC8701F003A6DA9 /* XALG_ADT_TreeNode.swift in Sources */,
@@ -874,6 +881,7 @@
 				02C675981EC8701F003A6DA9 /* XALG_ADT_Queue.swift in Sources */,
 				02C6759D1EC8701F003A6DA9 /* XALG_Rep_Heap.swift in Sources */,
 				02C6758A1EC8701F003A6DA9 /* XALG_Algo_Graph_Traversal_base.swift in Sources */,
+				029FC8A61ED4F05100D902AD /* XALG_Algo_Graph_LevelBFS.swift in Sources */,
 				02C675B21EC8701F003A6DA9 /* XALG_Algo_BinaryTree_Traversal_base.swift in Sources */,
 				02C675921EC8701F003A6DA9 /* XALG_Rep_Graph_AdjacencyList.swift in Sources */,
 				02C675B31EC8701F003A6DA9 /* XALG_Algo_BinaryTree_TraversalApplication.swift in Sources */,

@@ -18,23 +18,36 @@ class XALG_Algo_Graph_BFS<G : XALG_ADT_Graph>: XALG_Algo_Graph_Traversal_base<G>
         fatalError("Not supported")
     }
     
+    var vertex_distance_ = Dictionary<VertexType, Int>()
+    var vertex_predecessor_ = Dictionary<VertexType, VertexType>()
+
     override func iterative_forVertex(_ v: VertexType) -> Void {
+        
+        iterative_2(v)
+        
+        
+    }
+    // this works for General BFS, but cannot make depth right. In test example, v3's depth should be 1, not 2.
+    private func iterative_1(_ v: VertexType) -> Void {
         var visited_set = Set<VertexType>()
         var queue = XALG_DS_Queue__Array<VertexType>()
         queue.enqueue(v)
+        vertex_distance_[v] = 0
         
         while let a = queue.dequeue() {
-            print(queue.internalArray.map { $0.identifier })
+//            print(queue.internalArray.map { $0.identifier })
             
             if visited_set.contains(a) { continue }
             
-            let visit = XALG_Visit_Vertex<VertexType>()
-            visit.vertex = a
-            self.callback_visit?(visit)
-//            visited_set.insert(a)
+            let depth = vertex_distance_[a]!
+            handleVertex(a, depth: depth)
+      
+            //            visited_set.insert(a)
             
             for (v1, _) in graph!.adjecentVertexEdgeTuple_(forVertex: a) {
                 if !visited_set.contains(v1) {
+                    vertex_distance_[v1] = depth + 1
+                    vertex_predecessor_[v1] = a
                     queue.enqueue(v1)
                 }
             }
@@ -42,5 +55,54 @@ class XALG_Algo_Graph_BFS<G : XALG_ADT_Graph>: XALG_Algo_Graph_Traversal_base<G>
             visited_set.insert(a)
         }
     }
+    // From the book, introduction to algorithms, 22.2
+    enum Color { case white ; case gray ; case black }
+    private func iterative_2(_ v: VertexType) -> Void {
+        
+        
+        var vertex_color_ = Dictionary<VertexType , Color>()
+        
+        
+        
+        var visited_set = Set<VertexType>()
+        var queue = XALG_DS_Queue__Array<VertexType>()
+        queue.enqueue(v)
+        vertex_distance_[v] = 0
+        visited_set.insert(v) // diff from v1
+        while let a = queue.dequeue() {
+            //            print(queue.internalArray.map { $0.identifier })
+            
+//            if visited_set.contains(a) { continue } // diff from v1
+            
+            let depth = vertex_distance_[a]!
+            handleVertex(a, depth: depth)
+            
+            //            visited_set.insert(a)
+            
+            for (v1, _) in graph!.adjecentVertexEdgeTuple_(forVertex: a) {
+                if !visited_set.contains(v1) {
+                    vertex_distance_[v1] = depth + 1
+                    vertex_predecessor_[v1] = a
+                    queue.enqueue(v1)
+                    visited_set.insert(v1) // diff from v1
+                }
+            }
+            
+            
+        }
+    }
+
+    
+    var visit_ = [XALG_Visit_Vertex<VertexType>]()
+    private func handleVertex(_ v: VertexType, depth: Int) {
+        
+        let visit = XALG_Visit_Vertex<VertexType>()
+        visit.vertex = v
+        visit.depth = depth // vertex_distance_[v]!
+        self.callback_visit?(visit)
+        
+        visit_.append(visit)
+    }
+    
 }
 

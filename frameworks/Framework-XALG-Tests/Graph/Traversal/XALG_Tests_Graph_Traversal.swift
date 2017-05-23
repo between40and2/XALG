@@ -25,7 +25,7 @@ class XALG_Tests_Graph_Traversal: XALG_Tests_Graph_datafromfile {
         dfs.graph = _graph
         dfs.startVertex = _graph!.vertex(identifier: "v1")
         dfs.callback_visit = {
-            print($0.vertex!.identifier)
+            print($0.vertex!.identifier, $0.depth!)
         }
         try! dfs.travel()
         
@@ -42,21 +42,38 @@ class XALG_Tests_Graph_Traversal: XALG_Tests_Graph_datafromfile {
          */
     }
     
+    private let expected_ : [(String, Int)] = [
+        ("v1", 0),
+        ("v2", 1), ("v3", 1), ("v4", 1),
+        ("v5", 2), ("v6", 2),
+        ("v7", 3), ("v8", 3),
+        ("v9", 4)
+    ]
+    
+    
     func test_BFS() {
         let bfs = XALG_Algo_Graph_BFS<G>()
         bfs.graph = _graph
         bfs.startVertex = _graph!.vertex(identifier: "v1")
+        var index = 0
         bfs.callback_visit = {
-            print($0.vertex!.identifier)
+//            print($0.vertex!.identifier, $0.depth!)
+            let e = self.expected_[index]
+            XCTAssertEqual(e.0,  $0.vertex!.identifier )
+            XCTAssertEqual(e.1, $0.depth!)
+            index += 1
         }
+        
         try! bfs.travel()
+        
+
+        // expected vs actual
+        for (e, a) in zip(expected_, bfs.visit_) {
+            
+            XCTAssertEqual(e.0,  a.vertex!.identifier )
+            XCTAssertEqual(e.1, a.depth!)
+        }
+        
     }
-    /*v1
-     v2
-     v3
-     v4 (v5)
-     v6 (v7)
-     v8
-     v9
-     */
+
 }
