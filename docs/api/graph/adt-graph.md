@@ -25,3 +25,21 @@ Items to Query/Return | Directed Graph | Non-Directed Graph
 --|--|--
 Vertex | adjecentVertex_  |
 Vertex and Edge | <li> adjecentVertexEdgeTuple__out <li> func adjecentVertexEdgeTuple__in(forVertex v: VertexType) -> [(VertexType, EdgeType)] <li> func outEdgesAndVertices(forVertex v : VertexType) -> [(EdgeType, VertexType)] | adjecentVertexEdgeTuple_(forVertex v: VertexType) -> [(VertexType, EdgeType)]
+
+
+### How to extend Vertex/Edge
+
+You may notice there is a `var userInfo = [String: Any]()` in `XALG_DS_GraphVertex`. That is the extension point.
+
+```swift
+extension XALG_DS_GraphVertex {  
+    var center : CGPoint? {
+        set {
+            userInfo["center" ] = newValue
+        }
+        get {
+            return userInfo["center"] as? CGPoint
+        }
+    }
+}
+```
