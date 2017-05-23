@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Graph" representedClassName="Graph" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Graph" representedClassName="XALG_CDModel_Graph" syncable="YES" codeGenerationType="class">
         <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="edge_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GraphEdge" inverseName="graph" inverseEntity="GraphEdge" syncable="YES"/>
         <relationship name="vertex_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GraphVertex" inverseName="graph" inverseEntity="GraphVertex" syncable="YES"/>
     </entity>
-    <entity name="GraphEdge" representedClassName="GraphEdge" syncable="YES" codeGenerationType="class">
+    <entity name="GraphEdge" representedClassName="XALG_CDModel_GraphEdge" syncable="YES" codeGenerationType="class">
         <relationship name="graph" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Graph" inverseName="edge_" inverseEntity="Graph" syncable="YES"/>
     </entity>
-    <entity name="GraphVertex" representedClassName="GraphVertex" syncable="YES" codeGenerationType="class">
+    <entity name="GraphVertex" representedClassName="XALG_CDModel_GraphVertex" syncable="YES" codeGenerationType="class">
         <relationship name="graph" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Graph" inverseName="vertex_" inverseEntity="Graph" syncable="YES"/>
     </entity>
-    <entity name="OrderedTreeNode" representedClassName="OrderedTreeNode" syncable="YES" codeGenerationType="class">
+    <entity name="OrderedTreeNode" representedClassName="XALG_CDModel_OrderedTreeNode" syncable="YES" codeGenerationType="class">
         <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="child_" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="OrderedTreeNode" inverseName="parent" inverseEntity="OrderedTreeNode" syncable="YES"/>
         <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OrderedTreeNode" inverseName="child_" inverseEntity="OrderedTreeNode" syncable="YES"/>
     </entity>
     <elements>
         <element name="Graph" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="GraphVertex" positionX="-54" positionY="0" width="128" height="60"/>
         <element name="GraphEdge" positionX="-36" positionY="27" width="128" height="60"/>
+        <element name="GraphVertex" positionX="-54" positionY="0" width="128" height="60"/>
         <element name="OrderedTreeNode" positionX="-18" positionY="36" width="128" height="90"/>
     </elements>
 </model>
