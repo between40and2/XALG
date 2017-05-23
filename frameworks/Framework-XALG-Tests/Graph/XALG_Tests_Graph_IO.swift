@@ -14,21 +14,11 @@ import XCTest
 */
 
 class XALG_Tests_Graph_datafromfile : XCTestCase {
-    func linesFromTxtFile(_ filename : String) -> [String] {
-        
-        
-        let b = Bundle(for: type(of: self))
-        let url = b.url(forResource: filename, withExtension: "txt")!
-        let str = try! String(contentsOf: url)
-        var line_ = [String]()
-        str.enumerateLines { (s: String, stop: inout Bool) in
-            line_.append(s)
-        }
-        return line_
-    }
+
+    private let fsloader = XALG_FSLoader_Graph__linebased()
     
     func loadFromTxtfile_directed_weighted_stringAsVertex_intAsEdge(_ filename : String) -> XALG_Rep_Graph_Weighted<String, Int>? {
-        let line_ = linesFromTxtFile(filename)
+        let line_ = fsloader.linesFromTxtFile(filename)
         
         let decoder = XALG_Decoder_Graph__linebased<String, Int>()
         
@@ -53,7 +43,7 @@ class XALG_Tests_Graph_datafromfile : XCTestCase {
     }
     
     func loadFromTxtfile_undirected_unweighted_stringAsVertex(_ filename: String) -> XALG_Rep_Graph<String>? {
-        let line_ = linesFromTxtFile(filename)
+        let line_ = fsloader.linesFromTxtFile(filename)
         
         // fix-it, unweighted does not need WeightType, here Int.
         let decoder = XALG_Decoder_Graph__linebased<String, Int>()

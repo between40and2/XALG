@@ -9,7 +9,18 @@ import Foundation
 
 class XALG_FSLoader_Graph__linebased: NSObject {
 
-    
+    func linesFromTxtFile(_ filename : String) -> [String] {
+        
+        
+        let b = Bundle(for: type(of: self))
+        let url = b.url(forResource: filename, withExtension: "txt")!
+        let str = try! String(contentsOf: url)
+        var line_ = [String]()
+        str.enumerateLines { (s: String, stop: inout Bool) in
+            line_.append(s)
+        }
+        return line_
+    }
     
 }
 

@@ -12,6 +12,10 @@ enum XALG_Error_Decoder_Graph : Error {
     
 }
 
+protocol _XALG_Decoder_Graph {
+    func decode() throws
+}
+
 class XALG_Decoder_Graph__linebased<VertexIdentifier , Weight > : _XALG_Decoder__linebased
     where VertexIdentifier : Hashable, Weight : XALG_WeightType
 {
