@@ -9,8 +9,12 @@ import Swift
 import Foundation
 
 
-struct XALG_Rep_TreeNode_KaryTree<PayloadType> : XALG_ADT_TreeNode_KaryTree {
+struct XALG_Rep_TreeNode_KaryTree<Payload> : XALG_ADT_TreeNode_KaryTree, Hashable
+where Payload : Hashable {
     typealias NodeType = XALG_Rep_TreeNode_KaryTree // XALG_Rep_TreeNode_KaryTree<PayloadType>
+    
+    
+    typealias PayloadType = Payload
     
     typealias IndexType = Int
     
@@ -39,4 +43,19 @@ struct XALG_Rep_TreeNode_KaryTree<PayloadType> : XALG_ADT_TreeNode_KaryTree {
         }
     }
     
+    
+    
 }
+
+extension XALG_ADT_TreeNode_KaryTree  {
+    
+    var hashValue: Int {
+        return payload.hashValue
+    }
+    
+    static func ==(lhs: Self, rhs: Self) -> Bool {
+        return lhs.payload == rhs.payload
+    }
+    
+}
+

@@ -20,5 +20,7 @@ enum XALG_Error_Graph : Error {
 }
 
 enum XALG_Error_Graph_Algo : Error {
+    case notImplemented
     case graphAbsent
+    case startVertexAbsent
 }

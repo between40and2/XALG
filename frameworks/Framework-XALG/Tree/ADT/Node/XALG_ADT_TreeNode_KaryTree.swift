@@ -14,6 +14,10 @@ protocol XALG_ADT_TreeNode_KaryTree {
     
     associatedtype IndexType : Hashable
     var index: IndexType { get }
+    
+    
+    associatedtype PayloadType : Hashable
+    var payload : PayloadType { get } 
 }
 //extension XALG_ADT_Node_KaryTree : Hashable, Equatable {
 //    var hashValue: Int {

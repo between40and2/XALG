@@ -14,7 +14,8 @@ class XALG_Algo_Graph_Traversal_base<G : XALG_ADT_Graph>: XALG_Algo_Graph_base<G
     var callback_visit : ((XALG_Visit_Vertex<VertexType>) -> Void)?
     
     func travel() throws {
-        let v_s = startVertex!
+        guard graph != nil else { throw XALG_Error_Graph_Algo.graphAbsent }
+        guard let v_s = startVertex else { throw XALG_Error_Graph_Algo.startVertexAbsent }
         
         if usesRecursion {
             recursive_forVertex(v_s)
@@ -35,6 +36,17 @@ class XALG_Algo_Graph_Traversal_base<G : XALG_ADT_Graph>: XALG_Algo_Graph_base<G
     
     var usesRecursion : Bool = true
     internal var _recursive_depth : Int = 0
+    
+    var visit_ = [XALG_Visit_Vertex<VertexType>]()
+    func handleVertex(_ v: VertexType, depth: Int) {
+        
+        let visit = XALG_Visit_Vertex<VertexType>()
+        visit.vertex = v
+        visit.depth = depth // vertex_distance_[v]!
+        self.callback_visit?(visit)
+        
+        visit_.append(visit)
+    }
     
     
 }

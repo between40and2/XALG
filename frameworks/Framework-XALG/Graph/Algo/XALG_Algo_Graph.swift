@@ -13,7 +13,7 @@ class XALG_Algo_Graph_base<GraphType : XALG_ADT_Graph > {
     var graph : GraphType? // Cannot use XALG_ADT_Graph
     
     func run() throws {
-        fatalError()
+        throw XALG_Error_Graph_Algo.notImplemented
     }
     
     var callback_round : ((Int) -> Void)?

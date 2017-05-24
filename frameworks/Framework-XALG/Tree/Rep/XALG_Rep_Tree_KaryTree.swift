@@ -11,7 +11,7 @@ import Swift
 //
 //}
 
-struct XALG_Rep_Tree_KaryTree<PayloadType> : XALG_ADT_Tree_KaryTree {
+struct XALG_Rep_Tree_KaryTree<PayloadType : Hashable> : XALG_ADT_Tree_KaryTree {
     
     typealias NodeType = XALG_Rep_TreeNode_KaryTree<PayloadType>
 

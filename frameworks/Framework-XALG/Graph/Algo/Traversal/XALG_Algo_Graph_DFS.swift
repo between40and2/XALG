@@ -40,26 +40,31 @@ class XALG_Algo_Graph_DFS<G : XALG_ADT_Graph>: XALG_Algo_Graph_Traversal_base<G>
     
     
     
-    override func iterative_forVertex(_ v: VertexType) -> Void
+    override func iterative_forVertex(_ s: VertexType) -> Void
     {
     
         var stack = XALG_DS_Stack__Array<VertexType>()
         
         visited_set = Set<VertexType>()
         
-        stack.push(v)
+        stack.push(s)
         
-        while let current = stack.pop() {
+        while let u = stack.pop() {
             
-            if !visited_set.contains(current) {
-                visited_set.insert(current)
+            print(stack.item_.map{ $0.identifier})
+            
+            if !visited_set.contains(u) {
+                visited_set.insert(u)
                 
                 //
                 let visit = XALG_Visit_Vertex<VertexType>()
-                visit.vertex = current
+                visit.vertex = u
+                self.callback_visit?(visit)
                 
-                for (v1, _) in graph!.adjecentVertexEdgeTuple_(forVertex: current) {
-                    stack.push(v1)
+                for (v1, _) in graph!.adjecentVertexEdgeTuple_(forVertex: u) {
+                    if !visited_set.contains(v1) { // add by impl. 17-524
+                        stack.push(v1)
+                    }
                 }
             }
         }

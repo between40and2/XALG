@@ -19,13 +19,19 @@ class XALG_Tests_Graph_Traversal: XALG_Tests_Graph_datafromfile {
     
     private var _graph : G?
     
+    private let expected_DFS_ : [String] = [
+       
+        
+    ]
+    
     func test_DFS() {
         
         let dfs = XALG_Algo_Graph_DFS<G>()
+        dfs.usesRecursion = false 
         dfs.graph = _graph
         dfs.startVertex = _graph!.vertex(identifier: "v1")
         dfs.callback_visit = {
-            print($0.vertex!.identifier, $0.depth!)
+            print($0.vertex!.identifier, $0.depth ?? -1)
         }
         try! dfs.travel()
         
@@ -75,5 +81,59 @@ class XALG_Tests_Graph_Traversal: XALG_Tests_Graph_datafromfile {
         }
         
     }
-
+    class Level {
+        var queue = Array<String>()
+        var index : Int = 0
+        
+        init(index i: Int) {
+            index = i
+        }
+    }
+    func test_LevelBFS() {
+        
+        var expected_index_level_ = Dictionary<Int, Level>()
+        
+        expected_.forEach {
+            
+            var l_ = expected_index_level_[ $0.1 ] ??  Level(index: $0.1)
+            
+            l_.queue.append($0.0)
+            
+            expected_index_level_[ $0.1 ] = l_
+        }
+        // po index_level_.sorted{$0.0.key < $0.1.key }.map { ( $0.key , $0.value.queue.count )}
+        
+        let expected_level =
+        expected_index_level_.sorted{$0.0.key < $0.1.key }.map { ( $0.key , $0.value.queue.count )}
+        
+//        let expected_index_level_ = 
+        
+        print(expected_level)
+        
+        let level_bfs = XALG_Algo_Graph_LevelBFS<G>()
+        level_bfs.graph =  _graph
+        level_bfs.startVertex = _graph!.vertex(identifier: "v1")
+        
+        try! level_bfs.travel()
+        
+        let actual_level_ = level_bfs.level_
+        
+        
+        // Now Comparison
+        XCTAssertEqual(expected_index_level_.count, actual_level_.count)
+        
+        actual_level_.forEach {
+            
+            let l = expected_index_level_[$0.index]!
+            
+            XCTAssertEqual(l.index, $0.index)
+            XCTAssertEqual(l.queue.count,  $0.queue.count)
+            for i in 0..<l.queue.count {
+                XCTAssertEqual(l.queue[i], $0.queue.internalArray[i].identifier)
+            }
+            
+//            print($0.index, $0.queue.count)
+        }
+        
+    }
 }

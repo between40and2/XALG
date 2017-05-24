@@ -62,7 +62,10 @@ class TreeTraveral_preorder<TreeType> : XALG_Algo_KaryTree_Traversal_base<TreeTy
     }
 }
 
-class TreeTraveral_levelorder<TreeType> : XALG_Algo_KaryTree_Traversal_base<TreeType> where TreeType : XALG_ADT_Tree_KaryTree ,  TreeType.NodeType == TreeType.NodeType.NodeType ,TreeType.NodeType :  Hashable {
+class TreeTraveral_levelorder<TreeType> : XALG_Algo_KaryTree_Traversal_base<TreeType>
+where TreeType : XALG_ADT_Tree_KaryTree ,
+    TreeType.NodeType == TreeType.NodeType.NodeType ,
+    TreeType.NodeType :  Hashable {
     
     typealias NodeType = TreeType.NodeType
     

@@ -91,18 +91,6 @@ class XALG_Algo_Graph_BFS<G : XALG_ADT_Graph>: XALG_Algo_Graph_Traversal_base<G>
             
         }
     }
-
-    
-    var visit_ = [XALG_Visit_Vertex<VertexType>]()
-    private func handleVertex(_ v: VertexType, depth: Int) {
-        
-        let visit = XALG_Visit_Vertex<VertexType>()
-        visit.vertex = v
-        visit.depth = depth // vertex_distance_[v]!
-        self.callback_visit?(visit)
-        
-        visit_.append(visit)
-    }
     
 }
 
