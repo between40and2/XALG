@@ -71,7 +71,8 @@ class XALG_Sort_QuickSort_Hoare<Element: Comparable> : XALG_Sort_QuickSort_parti
             repeat { i += 1} while a[i] < pivot
             
             if i < j {
-                swap(&a[i], &a[j])
+                a.swapAt(i, j) // 17-a09
+//                swap(&a[i], &a[j]) // Overlapping accesses to 'a', but modification requires exclusive access; consider calling MutableCollection.swapAt(_:_:)
             }else {
                 return j
             }

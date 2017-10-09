@@ -24,7 +24,8 @@ class XALG_Sort_SelectionSort<Element: Comparable> : XALG_Sort_base<Element> {
             }
             
             if i != lowest {
-                swap(&array[i], &array[lowest])
+                array.swapAt(i, lowest)
+//                swap(&array[i], &array[lowest])
             }
             
             block_endRound?(i, array)

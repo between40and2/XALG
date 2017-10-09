@@ -30,7 +30,7 @@ TreeType.NodeType == TreeType.NodeType.NodeType
     
     var callback_visit : ((VisitType) -> Void)?
     
-    var callback_complete : ((Void) -> Void)?
+    var callback_complete : (() -> Void)?
     
     func traversal() {
         _visit_ = Array<VisitType>()

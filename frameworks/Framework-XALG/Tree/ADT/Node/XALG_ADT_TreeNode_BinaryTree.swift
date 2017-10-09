@@ -7,9 +7,10 @@
 
 import Swift
 
-protocol XALG_ADT_TreeNode_BinaryTree : class { // if not adding class, then === cannot be used. 
+ protocol XALG_ADT_TreeNode_BinaryTree  : class
+ { // if not adding class, then === cannot be used.
     associatedtype PayloadType
-    associatedtype NodeType : Self
+    associatedtype NodeType  // : Self where NodeType.PayloadType == Self.PayloadType
     var lchild: NodeType? { get set }
     var rchild: NodeType? { get set }
     var parent: NodeType? { get set}

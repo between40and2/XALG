@@ -17,7 +17,7 @@ class XALG_Algo_Graph_base<GraphType : XALG_ADT_Graph > {
     }
     
     var callback_round : ((Int) -> Void)?
-    var callback_complete : ((Void) ->Void)?
+    var callback_complete : (() ->Void)?
     
 }
 

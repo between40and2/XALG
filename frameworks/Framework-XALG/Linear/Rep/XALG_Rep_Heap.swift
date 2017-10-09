@@ -77,7 +77,8 @@ struct XALG_Rep_Heap<Type>: XALG_ADT_Heap {
             }
             if first == parentIndex { return }
             
-            swap(&_element_[parentIndex], &_element_[first])
+            _element_.swapAt(parentIndex, first)
+//            swap(&_element_[parentIndex], &_element_[first])
             parentIndex = first
         }
     }
@@ -121,7 +122,8 @@ extension XALG_Rep_Heap{
         
         let size = element_.count - 1
         if index != size {
-            swap(&_element_[index], &_element_[size])
+            _element_.swapAt(index, size)
+//            swap(&_element_[index], &_element_[size])
             shiftDown(index, heapSize: size)
             shiftUp(index)
         }
@@ -154,7 +156,8 @@ extension XALG_Rep_Heap where T: Equatable {
 extension XALG_Rep_Heap {
     public mutating func sort() -> [T] {
         for i in stride(from: (element_.count - 1), through: 1, by: -1) {
-            swap(&_element_[0], &_element_[i])
+            _element_.swapAt(0, i)
+//            swap(&_element_[0], &_element_[i])
             shiftDown(0, heapSize: i)
         }
         return element_

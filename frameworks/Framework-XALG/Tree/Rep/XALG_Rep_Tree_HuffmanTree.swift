@@ -18,8 +18,9 @@ class XALG_Rep_Tree_HuffmanTree<Payload> {
     }
     // p
     func buildTree(elements : [Payload], weights: [Int]) {
-        
-        var pq = XALG_Rep_PriorityQueue__Heap<NodeType>() {  $0.0.weight < $0.1.weight
+ 
+        var pq = XALG_Rep_PriorityQueue__Heap<NodeType>()
+        { (a, b) -> Bool in a.weight < b.weight
         }
         
         

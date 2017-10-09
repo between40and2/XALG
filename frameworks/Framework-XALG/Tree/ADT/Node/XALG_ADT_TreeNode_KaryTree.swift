@@ -9,7 +9,7 @@ import Swift
 
 
 protocol XALG_ADT_TreeNode_KaryTree {
-    associatedtype NodeType : Self
+    associatedtype NodeType  // : Self
     var child_ : [NodeType] { get set }
     
     associatedtype IndexType : Hashable

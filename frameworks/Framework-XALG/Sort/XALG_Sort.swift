@@ -49,6 +49,6 @@ class XALG_Sort_base <Element: Comparable> : NSObject, XALG_Sort {
 
 
 
-typealias XALG_Block_Void = (Void) -> Void
+typealias XALG_Block_Void = () -> Void
 typealias XALG_Block_Int = (Int) -> Void
 typealias XALG_Block_Int_Int = (Int, Int) -> Void
