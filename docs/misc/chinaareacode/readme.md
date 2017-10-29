@@ -12,6 +12,8 @@ Level|Alias|Head职务|军队
 乡级 |乡，镇，街道
 村级 |村，社区
 
+* [百度百科：中国干部级别](https://baike.baidu.com/item/中国干部级别)
+
 ### Data, from official set
 
 Defined by National Bureau of Statistics of PRC (国家统计局) as a [Standard (统计标准)](http://www.stats.gov.cn/tjsj/tjbz/)
@@ -19,7 +21,7 @@ Defined by National Bureau of Statistics of PRC (国家统计局) as a [Standard
 * [行政区划代码](http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/)
 * [统计用区划和城乡划分代码](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/) | [2016](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2016/index.html)
 
-## Data Details 
+## Data Details
 
 ### [Province list](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2016/index.html)
 
