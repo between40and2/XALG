@@ -13,7 +13,7 @@
 
 
 
-## 2.4 Mathematical Analysis of recursive Algorithms
+## 2.4 Mathematical Analysis of Recursive Algorithms
 
 ### Example 1: Factorial function
 

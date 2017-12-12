@@ -51,8 +51,8 @@ GREEK CAPITAL LETTER THETA
 
 > TABLE 2.2 Basic asymptotic efficiency classes
 
-Class | Name | Comments
---|--|--
+Class | Name | Comments | Examples p472
+--|--|--|--
 1 | constant | Short of best-case efficiencies, very few reasonable examples can be given since an algorithm’s running time typically goes to infinity when its input size grows infinitely large.
 log n | logarithmic | Typically, a result of cutting a problem’s size by a constant factor on each iteration of the algorithm (see Section 4.4). Note that a logarithmic algorithm cannot take into account all its input or even a fixed fraction of it: any algorithm that does so will have at least linear running time.
 n| linear | Algorithms that scan a list of size n (e.g., sequential search) belong to this class.
