@@ -19,9 +19,9 @@
 
 ## 8 Dynamic Programming
 
-## Greedy Technique
+## 9 Greedy Technique
 
-## 10 Iterative Improvement
+## [10 Iterative Improvement](10-iterative-improvement.md)
 
 ## 11 Limitations of Algorithm Power
 
