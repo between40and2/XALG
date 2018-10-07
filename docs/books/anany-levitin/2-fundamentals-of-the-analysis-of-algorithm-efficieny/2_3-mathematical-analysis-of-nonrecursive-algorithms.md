@@ -44,8 +44,6 @@ inhomogeneous
 
 
 /Input: A nonnegative integer n
-//Output: The nth Fibonacci number
-
-F[0]← 0; F[1]← 1
+//Output: The nth Fibonacci number F[0]← 0; F[1]← 1
 for i ← 2 to n do
 F [i] ← F [i − 1] + F [i − 2] return F [n]

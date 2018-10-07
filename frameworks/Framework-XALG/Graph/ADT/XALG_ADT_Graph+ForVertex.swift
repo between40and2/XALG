@@ -18,7 +18,8 @@ extension XALG_ADT_Graph
         case .inEdge: return inEdges(forVertex: v)
         case .outEdge : return outEdges(forVertex: v)
         case .undirected :
-            return edge_.flatMap{
+            // flatMap' is deprecated: Please use compactMap(_:) for the case where closure returns an optional value
+            return edge_.compactMap{
                 let c = $0.vertex_.contains(vv)
                 return c ? $0 : nil
             }
