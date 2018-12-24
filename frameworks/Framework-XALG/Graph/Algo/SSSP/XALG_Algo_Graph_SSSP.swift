@@ -7,7 +7,9 @@
 
 import Swift
 
-class XALG_Algo_Graph_SSSP<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_base<G> where G.VertexType : Hashable {
+class XALG_Algo_Graph_SSSP<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_base<G>
+//where G.VertexType : Hashable
+{
     
     typealias DistanceType = G.WeightType
     

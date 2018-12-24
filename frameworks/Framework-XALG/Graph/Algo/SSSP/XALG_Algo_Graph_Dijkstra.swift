@@ -9,7 +9,7 @@ import Swift
 
 // https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 
-class XALG_Algo_Graph_Dijkstra<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_SSSP<G> where G.VertexType : Hashable{
+class XALG_Algo_Graph_Dijkstra<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_SSSP<G>{
     
     //    typealias Vertex = UIView
     typealias Distance = Float

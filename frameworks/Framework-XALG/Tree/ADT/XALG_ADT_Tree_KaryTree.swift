@@ -14,9 +14,9 @@ protocol XALG_ADT_Tree_OrderedTree {
 }
 
 
-protocol XALG_ADT_Tree_KaryTree: XALG_ADT_Tree_OrderedTree {
-
-    associatedtype NodeType : XALG_ADT_TreeNode_KaryTree
+protocol XALG_ADT_Tree_KaryTree: XALG_ADT_Tree_OrderedTree where NodeType: XALG_ADT_TreeNode_KaryTree {
+    
+    
     
     var root : NodeType? { get set }
 }

@@ -7,8 +7,8 @@
 
 import Swift
 
-protocol XALG_ADT_Tree_BinarySearchTree : XALG_ADT_Tree_BinaryTree{
-    associatedtype NodeType : XALG_ADT_TreeNode_BinarySearchTree
+protocol XALG_ADT_Tree_BinarySearchTree : XALG_ADT_Tree_BinaryTree where NodeType: XALG_ADT_TreeNode_BinarySearchTree{
+    
 //    associatedtype NodeType : XALG_ADT_TreeNode_BinaryTree_Key
     associatedtype PayloadType
     associatedtype KeyType : Comparable
