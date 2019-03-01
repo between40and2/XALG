@@ -9,7 +9,8 @@ import Swift
 
 // https://en.wikipedia.org/wiki/Bellman–Ford_algorithm
 
-class XALG_Algo_Graph_BellmanFord<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_SSSP<G> where G.VertexType : Hashable {
+// Redundant conformance constraint 'G.VertexType': 'Hashable'
+class XALG_Algo_Graph_BellmanFord<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_SSSP<G> {
     
     override func run() throws {
         guard let g_w = graph else { throw XALG_Error_Graph_Algo.graphAbsent }

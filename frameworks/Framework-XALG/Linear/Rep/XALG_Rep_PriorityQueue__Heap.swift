@@ -19,6 +19,8 @@ struct XALG_Rep_PriorityQueue__Heap<Type> : XALG_ADT_PriorityQueue {
     }
     
     func peak() -> Type? {
+        
+        fatalError()
         return peak()
     }
     

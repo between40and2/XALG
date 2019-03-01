@@ -14,7 +14,8 @@ protocol XALG_ADT_Vertex : Hashable {
     
     //    associatedtype GraphType : XALG_ADT_Graph
     
-    weak var graph :  //XALG_ADT_Graph?
+    // 'weak' should not be applied to a property declaration in a protocol and will be disallowed in future versions
+    var graph :  //XALG_ADT_Graph?
         XALG_Rep_Graph<VertexIdentifier>?
         { get set }
     var identifier : VertexIdentifier { get }
