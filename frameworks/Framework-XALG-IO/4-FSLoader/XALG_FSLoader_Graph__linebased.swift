@@ -55,7 +55,7 @@ class _XALG_Decoder__linebased : NSObject {
         }
         
         return
-            raw_.map { $0.trimmingCharacters(in: CharacterSet.whitespaces) }.filter{ $0.characters.count > 0 }
+            raw_.map { $0.trimmingCharacters(in: CharacterSet.whitespaces) }.filter{ $0.count > 0 }
         
     }
     

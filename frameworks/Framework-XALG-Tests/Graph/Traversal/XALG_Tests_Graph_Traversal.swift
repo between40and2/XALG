@@ -104,7 +104,7 @@ class XALG_Tests_Graph_Traversal: XALG_Tests_Graph_datafromfile {
         // po index_level_.sorted{$0.0.key < $0.1.key }.map { ( $0.key , $0.value.queue.count )}
         
         let expected_level =
-        expected_index_level_.sorted{$0.0.key < $0.1.key }.map { ( $0.key , $0.value.queue.count )}
+        expected_index_level_.sorted{$0.key < $1.key }.map { ( $0.key , $0.value.queue.count )}
         
 //        let expected_index_level_ = 
         

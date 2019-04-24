@@ -15,7 +15,7 @@ class XALG_Tests_TestObserver: NSObject, XCTestObservation {
     override init() {
         super.init()
         
-        XCTestObservationCenter.shared().addTestObserver(self)
+        XCTestObservationCenter.shared.addTestObserver(self)
         
     }
     
