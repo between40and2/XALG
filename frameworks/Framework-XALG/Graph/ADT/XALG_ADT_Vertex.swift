@@ -29,10 +29,13 @@ extension XALG_ADT_Vertex {
 }
 
 extension XALG_ADT_Vertex  {
-    var hashValue: Int {
-        return identifier.hashValue
+//    var hashValue: Int {
+//        return identifier.hashValue
+//    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
     }
-    
     static func ==(lhs: Self, rhs: Self) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }

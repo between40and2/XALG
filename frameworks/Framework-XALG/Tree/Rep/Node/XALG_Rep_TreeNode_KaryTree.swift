@@ -49,13 +49,16 @@ where Payload : Hashable {
 
 extension XALG_ADT_TreeNode_KaryTree  {
     
-    var hashValue: Int {
-        return payload.hashValue
-    }
+//    var hashValue: Int {
+//        return payload.hashValue
+//    }
     
     static func ==(lhs: Self, rhs: Self) -> Bool {
         return lhs.payload == rhs.payload
     }
     
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(payload)
+    }
 }
 
