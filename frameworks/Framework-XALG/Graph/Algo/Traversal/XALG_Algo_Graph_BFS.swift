@@ -60,7 +60,7 @@ class XALG_Algo_Graph_BFS<G : XALG_ADT_Graph>: XALG_Algo_Graph_Traversal_base<G>
     private func iterative_2(_ v: VertexType) -> Void {
         
         
-        var vertex_color_ = Dictionary<VertexType , Color>()
+//        var vertex_color_ = Dictionary<VertexType , Color>()
         
         
         

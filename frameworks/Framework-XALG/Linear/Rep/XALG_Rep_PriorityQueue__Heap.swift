@@ -7,6 +7,14 @@
 
 import Swift
 
+// https://en.wikipedia.org/wiki/Priority_queue
+
+/*
+ There are at least 2 ways to specify the priority of each element.
+ 
+ - using external sorter to tell which one of any two element has higher priority. this below is in such way.
+ - element comes with its priority in pair as input. the priority may be part of element or it comes with element side by side.
+ */
 struct XALG_Rep_PriorityQueue__Heap<Type> : XALG_ADT_PriorityQueue {
     
     
@@ -21,7 +29,7 @@ struct XALG_Rep_PriorityQueue__Heap<Type> : XALG_ADT_PriorityQueue {
     func peak() -> Type? {
         
         fatalError()
-        return peak()
+//        return peak()
     }
     
     var count: Int { return heap.count }
