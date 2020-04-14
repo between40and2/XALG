@@ -76,8 +76,8 @@ class XALG_Tests_Graph_TopologicalSort: XALG_Tests_Graph_datafromfile {
         let vertex_a = _graph!.vertex(identifier: ident_a)!
         let vertex_b = _graph!.vertex(identifier: ident_b)!
         
-        let index_a = arr.index(of: vertex_a)!
-        let index_b = arr.index(of: vertex_b)!
+        let index_a = arr.firstIndex(of: vertex_a)!
+        let index_b = arr.firstIndex(of: vertex_b)!
         
         
         XCTAssertLessThan(index_a, index_b)

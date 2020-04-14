@@ -1,16 +1,13 @@
 //
-//  XALG_Algo_Graph_DFS.swift
-//  XALG
-//
-//  Created by Juguang Xiao on 18/03/2017.
-//
-
+//  XALG_Algo_Graph_DFS.swift in XALG on 18/03/2017.
 import Swift
 
 // https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-14-depth-first-search-dfs-topological-sort/
 
 
-class XALG_Algo_Graph_DFS<G : XALG_ADT_Graph>: XALG_Algo_Graph_Traversal_base<G> {
+class XALG_Algo_Graph_DFS<G>: XALG_Algo_Graph_Traversal_base<G>
+    where G : XALG_ADT_Graph
+{
  
 
     private var visited_set = Set<VertexType>()
@@ -47,13 +44,15 @@ class XALG_Algo_Graph_DFS<G : XALG_ADT_Graph>: XALG_Algo_Graph_Traversal_base<G>
         
         visited_set = Set<VertexType>()
         
+        // as a seed
         stack.push(s)
         
         while let u = stack.pop() {
             
             print(stack.item_.map{ $0.identifier})
             
-            if !visited_set.contains(u) {
+//            if !visited_set.contains(u) {
+    
                 visited_set.insert(u)
                 
                 //
@@ -66,7 +65,7 @@ class XALG_Algo_Graph_DFS<G : XALG_ADT_Graph>: XALG_Algo_Graph_Traversal_base<G>
                         stack.push(v1)
                     }
                 }
-            }
+//            }
         }
         
     }

@@ -27,3 +27,10 @@
 ## Construct Tree from given Inorder and Preorder traversals
 
 http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+
+
+
+
+
+[Huffman coding](https://en.wikipedia.org/wiki/Huffman_coding)
+

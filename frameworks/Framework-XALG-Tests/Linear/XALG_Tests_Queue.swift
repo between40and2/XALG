@@ -21,10 +21,11 @@ class XALG_Tests_Queue: XCTestCase {
         var queue = XALG_DS_Queue__Array<Int>()
         
         XCTAssertTrue(queue.isEmpty)
-        
+        XCTAssertTrue(queue.count == 0)
         queue.enqueue(1)
+        XCTAssertTrue(queue.count == 1)
         queue.enqueue(2)
-        
+        XCTAssertTrue(queue.count == 2)
         XCTAssertEqual(queue.dequeue()!, 1)
         XCTAssertEqual(queue.dequeue()!, 2)
         XCTAssertTrue(queue.isEmpty)
