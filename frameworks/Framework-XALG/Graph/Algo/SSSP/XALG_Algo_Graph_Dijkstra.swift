@@ -30,10 +30,9 @@ class XALG_Algo_Graph_Dijkstra<G : XALG_ADT_Graph_Weighted> : XALG_Algo_Graph_SS
     var processedVertex_ = Set<VertexType>()
     
     override func run() throws {
-        initializeSingleSource()
-        
-        
         guard let g = graph else { throw XALG_Error_Graph_Algo.graphAbsent }
+        
+        initializeSingleSource()
         
         g.vertex_.forEach{
             pq.enqueue($0)

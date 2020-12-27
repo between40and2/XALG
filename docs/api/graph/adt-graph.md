@@ -32,7 +32,7 @@ Vertex and Edge | <li> adjecentVertexEdgeTuple__out <li> func adjecentVertexEdge
 You may notice there is a `var userInfo = [String: Any]()` in `XALG_DS_GraphVertex`. That is the extension point.
 
 ```swift
-extension XALG_DS_GraphVertex {  
+extension XALG_DS_GraphVertex {
     var center : CGPoint? {
         set {
             userInfo["center" ] = newValue
@@ -43,3 +43,13 @@ extension XALG_DS_GraphVertex {
     }
 }
 ```
+
+
+### XALG_ADT_Graph
+
+
+protocol|conformed
+--|--
+XALG_ADT_Graph|XALG_Rep_Graph
+XALG_ADT_Graph_Weighted|XALG_Rep_Graph_Weighted
+

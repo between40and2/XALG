@@ -1,21 +1,23 @@
 
-# SSSP (Single Source Shortest Path)
+### SSSP (Single Source Shortest Path)
 
 There are at least 2 classic algorithms for that.
 
-*
+name|feature|condition of use
+--|--|--
+[Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)|
+[Bellman–Ford algorithm](https://en.wikipedia.org/wiki/Bellman–Ford_algorithm)|
 
 
-## base class
+
+#### base class
 
 Unless it is a graph generation algorithm, it requires a graph as input.
 
 ```swift
-class XALG_Alg_Graph_base<GraphType : XALG_ADT_Graph >
-
+class XALG_Alg_Graph_base<GraphType : XALG_ADT_Graph > {
 
 var graph : GraphType? // Cannot use XALG_ADT_Graph
-
 ```
 
 

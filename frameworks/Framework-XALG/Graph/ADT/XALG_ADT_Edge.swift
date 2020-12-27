@@ -16,16 +16,23 @@ protocol XALG_ADT_Edge  : Hashable {
     associatedtype VertexType : XALG_ADT_Vertex
     
     var vertex_ : [VertexType] { get }
+    
+    init(_ a : VertexType, _ b : VertexType)
+}
+
+enum XALG_Kind_EdgeEnd : Int { // rawValue as index of `vertext_`
+    case from   = 0
+    case to     = 1
 }
 
 extension XALG_ADT_Edge {
-    func anotherVertex(for v: VertexType) -> VertexType? {
+    func anotherVertex(for v: VertexType) -> (VertexType, XALG_Kind_EdgeEnd)? {
     
         if vertex_[0] == v {
-            return vertex_[1]
+            return (vertex_[1], .to)
         }
         if vertex_[1] == v {
-            return vertex_[0]
+            return (vertex_[0], .from)
         }
         return nil
     }

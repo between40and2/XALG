@@ -41,15 +41,15 @@ where VertexIdentifier : Hashable
     
     override func addEdge(between v0: VertexType, and v1: VertexType) throws -> EdgeType? {
 
-        let e = EdgeType()
-        e.vertex_ = [v0, v1]
+        let e = EdgeType(v0, v1)
         
-        inVertex_edges_[v0.identifier]?.append(e)
+        inVertex_edges_[v0.identifier, default: []].append(e)
 //        outVertex_edges_[v1.identifier]?.append(e)
         
         return e
     }
-        private var vertexIdent_vertex_  = Dictionary<VertexIdentifierType, VertexType>()
+        
+    private var vertexIdent_vertex_  = Dictionary<VertexIdentifierType, VertexType>()
     
     override var edge_: [EdgeType] {
         // https://developer.apple.com/reference/swift/array/1689788-flatmap
@@ -64,9 +64,9 @@ where VertexIdentifier : Hashable
             return inVertex_edges_.keys.map { return vertexIdent_vertex_[$0]! }
         }
         
-            set {
-                fatalError()
-            }
+//        set {
+//                fatalError()
+//            }
     }
 }
 

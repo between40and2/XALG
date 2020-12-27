@@ -31,7 +31,7 @@ Not having a weight is a special case of having a weight. You can think of it as
 
 Should the IO or format or Database design reserve the keep non-graph info, e.g. vertex and edge contents?
 
-If yes, .... 
+If yes, ....
 
 ## Creation and Building
 
@@ -53,3 +53,17 @@ A empty graph object should be created first, by that time, the following must b
 ### by-product of a algorithm, and how to make use of it.
 
 * edge classification
+
+#### Alog that works with _Weighted_ Group only `XALG_ADT_Graph_Weighted`
+
+x|x
+--|--
+XALG_Algo_Graph_CritialPath|
+XALG_Algo_Graph_SSSP|
+XALG_Algo_Graph_BellmanFord|
+XALG_Algo_Graph_Dijkstra|
+
+
+
+
+XALG_Algo_Graph_Traversal_base

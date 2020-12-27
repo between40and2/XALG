@@ -6,62 +6,13 @@
 //
 
 import Swift
-extension XALG_ADT_Graph
 
-//where VertexType == EdgeType.VertexType
-
-{
-    func edges(forVertex v: VertexType, edgeKind : XALG_Enum_Graph_EdgeKindForVertex) -> [EdgeType] {
-        
-        let vv = v as! EdgeType.VertexType
-        switch edgeKind {
-        case .inEdge: return inEdges(forVertex: v)
-        case .outEdge : return outEdges(forVertex: v)
-        case .undirected :
-            // flatMap' is deprecated: Please use compactMap(_:) for the case where closure returns an optional value
-            return edge_.compactMap{
-                let c = $0.vertex_.contains(vv)
-                return c ? $0 : nil
-            }
-        }
-    }
-    
-
-    func inEdges(forVertex v : VertexType) -> [EdgeType] {
-        return edge_.filter {
-            let v1 = $0.vertex_[1] as! VertexType
-            return v1 == v
-        }
-    }
-    
-    // performance is O(E)
-    func outEdges(forVertex v : VertexType) -> [EdgeType] {
-        return edge_.filter {
-            let v1 = $0.vertex_[0] as! VertexType
-            return v1 == v
-        }
-    }
-    
+extension XALG_ADT_Graph { // query on adjecent
     
     func adjecentVertex_(for v: VertexType) -> [VertexType] {
-        
-        return adjecentVertexEdgeTuple_(forVertex: v).map { return $0.0 }
-        
-//        return []
+        adjecentVertexEdgeTuple_(forVertex: v).map { return $0.0 }
     }
     
-    
-    
-    func adjecentVertexEdgeTuple__out(forVertex v: VertexType) -> [(VertexType, EdgeType)] {
-        
-        
-        return outEdges(forVertex: v).map { ($0.vertex_[1] as! VertexType, $0) }
-    }
-    
-    func adjecentVertexEdgeTuple__in(forVertex v: VertexType) -> [(VertexType, EdgeType)] {
-        let a_ : [(VertexType, EdgeType)] = inEdges(forVertex: v).map { ($0.vertex_[0] as! VertexType, $0) }
-        return a_
-    }
     
     func adjecentVertexEdgeTuple_(forVertex v: VertexType) -> [(VertexType, EdgeType)] {
         
@@ -78,6 +29,47 @@ extension XALG_ADT_Graph
             return adjecentVertexEdgeTuple__in(forVertex: v) + adjecentVertexEdgeTuple__out(forVertex: v)
         }
         
+    }
+    
+}
+
+extension XALG_ADT_Graph { // mutating
+    
+    func addEdge(between i0 : VertexIdentifierType, and i1 : VertexIdentifierType) throws -> EdgeType? {
+        
+        let v0 = try findOrCreateVertex(identifier: i0)
+        let v1 = try findOrCreateVertex(identifier: i1)
+        return try addEdge(between: v0, and: v1)
+    }
+    
+    func addEdge(from i0 : VertexIdentifierType, to i1 : VertexIdentifierType) throws -> EdgeType? {
+        let v0 = try findOrCreateVertex(identifier: i0)
+        let v1 = try findOrCreateVertex(identifier: i1)
+//        return try addEdge(from: v0, to: v1)
+        return try addEdge(from: v0, to: v1)
+    }
+    
+    // this throws the same error set as addVertex.
+    // if not found, then it is not regardedd as error, and add a new one. Therefore this will always return non-nil.
+    //    func findOrCreateVertex(byIdentifier ident : VertexIdentifierType) throws -> VertexType
+    func findOrCreateVertex(identifier ident: VertexIdentifierType) throws -> VertexType {
+
+        if let v = vertex(identifier: ident){
+            return v
+        }
+        return try addVertex(identifier: ident)
+        
+    }
+}
+
+
+extension XALG_ADT_Graph { // Query
+    var rootVertex_ : [VertexType] {
+        vertex_.filter { inDegree(forVertex:  $0) == 0 }
+    }
+    
+    var leafVertex_ : [VertexType] {
+        vertex_.filter { outDegree(forVertex: $0) == 0 }
     }
     
 }

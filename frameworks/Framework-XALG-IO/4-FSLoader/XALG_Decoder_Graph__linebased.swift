@@ -112,13 +112,13 @@ class XALG_Decoder_Graph__linebased<VertexIdentifier , Weight > : _XALG_Decoder_
         let gg = isWeighted ? g_w! : g!
         
         let s0 = vertexSymbol(c_[0])
-        let v0 = try gg.findOrCreateVertex(identifier: s0 )
+        let v0 = try gg.findOrCreateVertex(identifier: s0)
         let s1 = vertexSymbol(c_[1])
         let v1 = try gg.findOrCreateVertex(identifier: s1)
         
-        if isWeighted {
-            //            let w =
-            let _ = try g_w?.addEdge(between: v0, and: v1)
+        if isWeighted { 
+//            let _ = try g_w?.addEdge(between: v0, and: v1)
+            let _ = try g_w?.addEdge(from: v0, to: v1)
         }else {
             let _ = try g?.addEdge(between: v0, and: v1)
         }

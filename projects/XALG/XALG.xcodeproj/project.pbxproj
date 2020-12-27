@@ -102,6 +102,7 @@
 		02C675F91EC8702A003A6DA9 /* XALG_Tests_BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675E11EC8702A003A6DA9 /* XALG_Tests_BinaryTree.swift */; };
 		02C675FA1EC8702A003A6DA9 /* XALG_Tests_HuffmanTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675E21EC8702A003A6DA9 /* XALG_Tests_HuffmanTree.swift */; };
 		02C675FB1EC8702A003A6DA9 /* XALG_Tests_KaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C675E31EC8702A003A6DA9 /* XALG_Tests_KaryTree.swift */; };
+		02E240822594019400063D8B /* XALG_Hosting_GraphEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E240812594019300063D8B /* XALG_Hosting_GraphEdge.swift */; };
 		02E991F61EBF0C4D009BF5E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E991F51EBF0C4D009BF5E8 /* AppDelegate.swift */; };
 		02E991F81EBF0C4D009BF5E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E991F71EBF0C4D009BF5E8 /* ViewController.swift */; };
 		02E991FD1EBF0C4D009BF5E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E991FC1EBF0C4D009BF5E8 /* Assets.xcassets */; };
@@ -215,6 +216,7 @@
 		02C675E11EC8702A003A6DA9 /* XALG_Tests_BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_BinaryTree.swift; sourceTree = "<group>"; };
 		02C675E21EC8702A003A6DA9 /* XALG_Tests_HuffmanTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_HuffmanTree.swift; sourceTree = "<group>"; };
 		02C675E31EC8702A003A6DA9 /* XALG_Tests_KaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XALG_Tests_KaryTree.swift; sourceTree = "<group>"; };
+		02E240812594019300063D8B /* XALG_Hosting_GraphEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XALG_Hosting_GraphEdge.swift; sourceTree = "<group>"; };
 		02E991F21EBF0C4D009BF5E8 /* XALG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XALG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E991F51EBF0C4D009BF5E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02E991F71EBF0C4D009BF5E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				02C675231EC8701F003A6DA9 /* XALG_ADT_Graph+ForVertex.swift */,
 				02C675241EC8701F003A6DA9 /* XALG_ADT_Graph.swift */,
 				02C675251EC8701F003A6DA9 /* XALG_ADT_Vertex.swift */,
+				02E240812594019300063D8B /* XALG_Hosting_GraphEdge.swift */,
 			);
 			path = ADT;
 			sourceTree = "<group>";
@@ -722,12 +725,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Juguang Xiao";
 				TargetAttributes = {
 					02E991F11EBF0C4D009BF5E8 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 5823N3XW52;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
@@ -800,6 +802,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E240822594019400063D8B /* XALG_Hosting_GraphEdge.swift in Sources */,
 				02C675B61EC8701F003A6DA9 /* XALG_Rep_TreeNode_BinaryTree.swift in Sources */,
 				02C675BB1EC8701F003A6DA9 /* XALG_ThreadedBinaryTree.swift in Sources */,
 				02C675BD1EC8701F003A6DA9 /* XALG_Path.swift in Sources */,
@@ -939,6 +942,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1000,6 +1004,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1032,9 +1037,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5823N3XW52;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = XALG/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juguangxiao.XALG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1047,9 +1052,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5823N3XW52;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = XALG/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juguangxiao.XALG;
 				PRODUCT_NAME = "$(TARGET_NAME)";

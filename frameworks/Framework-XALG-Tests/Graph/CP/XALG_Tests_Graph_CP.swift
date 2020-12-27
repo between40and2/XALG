@@ -17,7 +17,7 @@ class XALG_Tests_Graph_CP: XALG_Tests_Graph_datafromfile {
         _graph = loadFromTxtfile_directed_weighted_stringAsVertex_intAsEdge("data-graph-aoe")!
     }
     
-    private var _graph : G?
+    private var _graph : G!
     
     func test_CritialPath() {
 
@@ -35,8 +35,8 @@ class XALG_Tests_Graph_CP: XALG_Tests_Graph_datafromfile {
  < v6 ,  v8
  */
         
-        XCTAssertEqual(cp.path_!.count, 1)
-        let path =    cp.path_![0]
+        XCTAssertEqual(cp.path_.count, 1)
+        let path =    cp.path_[0]
         
         XCTAssertEqual(path.edge_.count, 4)
         

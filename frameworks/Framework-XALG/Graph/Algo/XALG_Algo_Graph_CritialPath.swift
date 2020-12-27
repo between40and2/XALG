@@ -137,11 +137,11 @@ where G : XALG_ADT_Graph_Weighted
     
         if pathEdge_.count > 0 {
             let p = Graph_Path(edge_: pathEdge_)
-            path_!.append( p)
+            path_.append( p)
         }
     }
     
-    var path_ : Array<Graph_Path>?
+    private(set) var path_ : Array<Graph_Path> = Array<Graph_Path>()
     
     
     struct Graph_Path  {
