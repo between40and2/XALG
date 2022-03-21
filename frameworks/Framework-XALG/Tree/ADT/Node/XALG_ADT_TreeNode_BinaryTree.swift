@@ -1,13 +1,9 @@
-//
-//  XALG_ADT_TreeNode_BinaryTree.swift
-//  XALG
-//
-//  Created by Juguang Xiao on 02/03/2017.
-//
+//  XALG_ADT_TreeNode_BinaryTree.swift   XALG on 02/03/2017.
 
 import Swift
 
- protocol XALG_ADT_TreeNode_BinaryTree  : class
+// Using 'class' keyword for protocol inheritance is deprecated; use 'AnyObject' instead 21-521
+protocol XALG_ADT_TreeNode_BinaryTree  : AnyObject
  { // if not adding class, then === cannot be used.
     associatedtype PayloadType
     associatedtype NodeType  // : Self where NodeType.PayloadType == Self.PayloadType

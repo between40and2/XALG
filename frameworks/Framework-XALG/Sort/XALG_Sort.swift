@@ -6,8 +6,8 @@
 //
 
 import Foundation
-
-protocol XALG_Sort : class {
+// Using 'class' keyword for protocol inheritance is deprecated; use 'AnyObject' instead
+protocol XALG_Sort : AnyObject {
     associatedtype ElementType
     
 //    https://developer.apple.com/reference/swift/array/1688499-sort

@@ -6,7 +6,7 @@
 //
 
 import Swift
-protocol XALG_ADT_Graph: class, XALG_Hosting_GraphEdge , XALG_Hosting_GraphVertex , XALG_Building_GraphEdge_undirectional, XALG_Building_GraphEdge_directional{
+protocol XALG_ADT_Graph: AnyObject, XALG_Hosting_GraphEdge , XALG_Hosting_GraphVertex , XALG_Building_GraphEdge_undirectional, XALG_Building_GraphEdge_directional{
 //    associatedtype VertexIdentifierType : Hashable
 //    associatedtype VertexType : XALG_ADT_Vertex
 //    associatedtype EdgeType : XALG_ADT_Edge
