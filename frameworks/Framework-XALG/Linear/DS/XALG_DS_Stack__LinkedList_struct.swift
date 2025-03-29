@@ -45,7 +45,7 @@ struct XALG_Rep_Stack__LinkedList_struct<Element> : XALG_ADT_Stack {
     mutating func push(_ item: Element) {
         var node = XALG_Rep_LinkedNode<Element>(element: item, next: _top)
         //        let p = &node
-        _top = UnsafeMutablePointer<XALG_Rep_LinkedNode<Element>>(&node)
+//        _top = UnsafeMutablePointer<XALG_Rep_LinkedNode<Element>>(&node)
         
         //        [].withUnsafeBufferPointer { (UnsafeBufferPointer<Any>) -> R in
         
